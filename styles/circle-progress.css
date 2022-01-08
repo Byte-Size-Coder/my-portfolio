@@ -1,0 +1,106 @@
+.circle-wrap {
+  width: 150px;
+  height: 150px;
+  background: #f1f2eb;
+  border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #fe5f55;
+}
+
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.mask.full-95,
+.circle .fill-95 {
+  /* animation: fill ease-in-out 3s; */
+  transform: rotate(171deg);
+}
+
+.mask.full-90,
+.circle .fill-90 {
+  /* animation: fill ease-in-out 3s; */
+  transform: rotate(162deg);
+}
+
+.mask.full-85,
+.circle .fill-85 {
+  /* animation: fill ease-in-out 3s; */
+  transform: rotate(153deg);
+}
+
+.mask.full-80,
+.circle .fill-80 {
+  /* animation: fill ease-in-out 3s; */
+  transform: rotate(144deg);
+}
+
+.mask.full-75,
+.circle .fill-75 {
+  /* animation: fill ease-in-out 3s; */
+  transform: rotate(135deg);
+}
+
+.mask.full-70,
+.circle .fill-70 {
+  /* animation: fill ease-in-out 3s; */
+  transform: rotate(126deg);
+}
+
+.mask.full-65,
+.circle .fill-65 {
+  /* animation: fill ease-in-out 3s; */
+  transform: rotate(117deg);
+}
+
+.mask.full-60,
+.circle .fill-60 {
+  /* animation: fill ease-in-out 3s; */
+  transform: rotate(108deg);
+}
+
+.circle-wrap .inside-circle {
+  width: 122px;
+  height: 122px;
+  border-radius: 50%;
+  background: #df5149;
+  text-align: center;
+  margin-top: 14px;
+  margin-left: 14px;
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  font-weight: 700;
+}
+
+.circle-number {
+  font-size: 32px;
+}
+
+.circle-heading {
+  font-size: 18px;
+}
+
+/* @keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+} */
