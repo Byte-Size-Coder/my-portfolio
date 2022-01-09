@@ -165,14 +165,14 @@ body {
 }
 
 .card__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .card__head-section {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .card__descrption-section {
@@ -258,4 +258,15 @@ footer {
 
 footer p {
     margin: 0.5rem 0;
+}
+
+.project-skills {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.project-skills img {
+    margin: 0 1rem;
 }
