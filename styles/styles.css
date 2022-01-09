@@ -1,7 +1,11 @@
 body {
     font-family: 'Lato', sans-serif;
-    margin: 0rem 5rem 0rem 5rem;
     background-color: #f1f2eb;
+    margin: 0;
+}
+
+.no-margin {
+    margin: 0;
 }
 
 .button-main {
@@ -38,12 +42,20 @@ body {
 .intro__title {
     width: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.intro__title p {
+    font-size: 24px;
+}
+
 .intro__image {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about {
@@ -51,6 +63,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .about__content {
     width: 50%;
     font-size: 18px;
@@ -116,6 +129,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 2rem;
 }
 
 .professional-work__title {
@@ -134,27 +148,35 @@ body {
 .professional-work__cards {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 50%;
     height: 1000px;
     align-items: flex-start;
     justify-content: space-between;
-    position: relative;
-    left: -5rem;
-}
-
-.professional-work__card {
-    width: 80%;
-    height: 300px;
-    background-color: white;
-    position: relative;
-    border-radius: 5px;
-    box-shadow: 3px 4px 3px grey;
 }
 
 .card {
+    width: 100%;
+    height: 300px;
     background-color: white;
+    border-radius: 10px;
     box-shadow: 3px 4px 3px grey;
-    border-radius: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__head-section {
+    width: 30%;
+}
+
+.card__descrption-section {
+    width: 70%;
 }
 
 .small-card {
@@ -167,6 +189,13 @@ body {
     height: 300px;
 }
 
+.personal-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+}
+
 .personal-work__title {
     width: 100%;
     display: flex;
@@ -175,14 +204,27 @@ body {
 
 .personal-work__content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
 }
 
-.personal-work__small-cards {
+.personal-work__cards {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 50%;
+    height: 650px;
+    align-items: flex-end;
     justify-content: space-between;
+}
+
+.personal-work__card {
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 3px 4px 3px grey;
 }
 
 .contact {
