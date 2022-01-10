@@ -168,7 +168,7 @@ body {
 }
 
 .card__head-section {
-    width: 30%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,7 +263,7 @@ footer p {
 .project-skills {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 1rem;
 }
 
