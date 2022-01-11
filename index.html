@@ -16,32 +16,32 @@
     </head>
     <body>
         <section class="intro">
-            <div class="intro__title">
+            <div class="half-width all-centered-column">
                 <p class="no-margin">The</p>
                 <h1 class="main-title no-margin">Byte Size Coder</h1>
             </div>
-            <div class="intro__image">
+            <div class="half-width all-centered-row">
                 <img src="images/profilePic.png" alt="Profile Picture" />
             </div>
         </section>
-        <section class="about">
+        <section class="all-centered-column">
             <h1 class="section-title">Hi, I am Matthew Douglas</h1>
-            <div class="about__content">
-                <p>
+            <div class="half-width">
+                <p class="text">
                     I am an experienced Software Developer who specializes in both web and game
                     applications. It all started from playing video games and having the curiousity
                     of how they are made and how they can be so much fun!
                 </p>
-                <p>
+                <p class="text">
                     My motivation comes from delivering a memorable experience to all the users
                     through effective design and performant functionality.
                 </p>
-                <p>
+                <p class="text">
                     Feel free to reach out to me about my skills, prior experience, or potential
                     collaboaration on another project!
                 </p>
-                <div class="about__schools">
-                    <div class="school-container">
+                <div class="schools">
+                    <div class="half-width all-centered-column">
                         <img
                             class="tfs-img"
                             src="images/tfs.jpeg"
@@ -50,14 +50,13 @@
                         />
                         <p>Video Game Design & Development</p>
                     </div>
-
-                    <div class="school-container">
+                    <div class="half-width all-centered-column">
                         <img src="images/fanshawe.png" alt="Fanshawe College" height="100" />
                         <p>Computer Programmer Analyst</p>
                     </div>
                 </div>
-                <div class="about__button">
-                    <button class="button-main">View My CV</button>
+                <div class="all-centered-row">
+                    <button class="button-main" id="button-cv">View My CV</button>
                 </div>
             </div>
         </section>
@@ -65,7 +64,7 @@
         <section class="skills">
             <div class="skills-heading">
                 <h1 class="section-title">My Skills</h1>
-                <h3>Here are my top professional skills that I can provide for any project</h3>
+                <h2>Here are my top professional skills that I can provide for any project</h2>
             </div>
             <div class="skills-content">
                 <div class="skills-content__row">
@@ -286,12 +285,12 @@
                 </div>
             </div>
         </section>
-        <section class="professional-work">
+        <section class="all-centered-column body-left">
             <div class="professional-work__title">
                 <h1 class="section-title">My Professional Work</h1>
             </div>
             <div class="professional-work__content">
-                <div class="professional-work__cards">
+                <div class="cards start-alignment half-width">
                     <div class="card">
                         <div class="card__content card__head-section">
                             <img src="images/rage-of-pluto.png" width="125" alt="Rage of Pluto" />
@@ -302,7 +301,26 @@
                             </div>
                             <h2>Rage of Pluto</h2>
                         </div>
-                        <div class="card__content"></div>
+                        <div class="card__content">
+                            <p>
+                                Rage of Pluto is a mobile physics based side-scrolling action arcade
+                                game developed for the android platform on the Google Play Store.
+                                The purpose of the game is to traverse space in search of Pluto’s
+                                long lost friend Neptune. Players will use the Moon ball and dash
+                                mechanics to traverse the enemies and obstacles.
+                            </p>
+                            <p>
+                                My responsibilites coming into this project was to optimize the game
+                                as it had poor performance. I was able to invesitgate and implement
+                                design patterns such as object pooling to drastically improve the
+                                performance for all mobile devices. I also developed several
+                                gameplay features that involed the physics and interactions of the
+                                moonball weapon!
+                            </p>
+                            <div class="card__button">
+                                <button class="button-main" onclick="" id="button-pluto">View Game</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="card">
                         <div class="card__content card__head-section">
@@ -314,6 +332,25 @@
                                 <img src="images/google-play.png" width="35" height="40" />
                             </div>
                             <h2>Neurobody</h2>
+                        </div>
+                        <div class="card__content">
+                            <p>
+                                Neurobody is a encyclopedia application that consist of fully 3D
+                                exercises for the user to analyze and understand. These exercises
+                                are full of information to educate the user such as Instructions,
+                                tips, common avoidances, and muscle engagement.
+                            </p>
+                            <p>
+                                I was the full-stack developer for this project. I was responsible
+                                for taking all the visuals (models, animations, UI) and developer
+                                the features and user flows. The main feature is the timeline that
+                                is use to traverse through the animation and stop at any frame. All
+                                data is stored and retreived using the firebase sdk for unity.
+                            </p>
+                            <p>This app is currently in Beta!</p>
+                            <div class="card__button">
+                                <button class="button-main" id="button-neurobody">View App</button>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -327,18 +364,38 @@
                             </div>
                             <h2>Cover Me Pro</h2>
                         </div>
+                        <div class="card__content">
+                            <p>
+                                Cover Me Pro is a work scheduling web application that allows
+                                managers tp schedule shifts to their staff. This also alows
+                                employees to view and manager thier shifts. They are able to trade
+                                with eachother, or request vacation/sick leave. This application
+                                also handle overtime callouts by utiling text notifcations to all
+                                eligible employees.
+                            </p>
+
+                            <p>
+                                This application is currently in development which I am responsible
+                                for designing all user flow and features and implementing them using
+                                React and Material UI. All server side logic utlize firebase
+                                functions that handles authentication, database, and file storage.
+                            </p>
+                            <div class="card__button">
+                                <button class="button-main" id="button-cover">Learn More</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="professional-work__image"></div>
             </div>
         </section>
-        <section class="personal-work">
+        <section class="all-centered-column body-right">
             <div class="personal-work__title">
                 <h1 class="section-title">My Personal Projects</h1>
             </div>
             <div class="personal-work__content">
                 <div class="personal-work__image"></div>
-                <div class="personal-work__cards">
+                <div class="cards end-alignment half-width">
                     <div class="card">
                         <div class="card__content card__head-section">
                             <img
@@ -353,7 +410,26 @@
                             </div>
                             <h2>Capstan Gate</h2>
                         </div>
-                        <div class="card__content"></div>
+                        <div class="card__content">
+                            <p>
+                                Capstan Gate is a stealth horror video game that was a final student
+                                project that was made by our term. Players play as a patient that
+                                must escape from the asylum while their mind begins to loose control
+                                with disturbing visuals and persuasive voices within their head.
+                            </p>
+                            <p>
+                                I was appointed Technical Lead for this project with a team of 3
+                                programmers. My responsibilities were to lead the team and
+                                create/maintain development expectations. With those responsiblites,
+                                I also developed both the player's main mechanics and the enemy AI's
+                                perception and pathfinding sequences.
+                            </p>
+                            <div class="card__button">
+                                <button class="button-main" id="button-capstan">
+                                    Watch Gameplay
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <div class="card">
                         <div class="card__content card__head-section">
@@ -366,22 +442,45 @@
                             </div>
                             <h2>Chatnonymous</h2>
                         </div>
-                        <div class="card__content"></div>
+                        <div class="card__content">
+                            <p>
+                                Chatnonymous is a chat web application that allows users to
+                                communicate anonymously. This was design to create an environment
+                                where people can share their thoughts together without the concern
+                                of your identity attached to these thoughts. This allows discussions
+                                to happen at the clearest level so everyone in that environment can
+                                comprehend and understand.
+                            </p>
+                            <p>
+                                I develop this after graduating from Fanshawe College. There is both
+                                a client (React) and a server (NodeJS) that uses WebSocket
+                                communication. All information is stored in the server, meaning no
+                                data is stored to keep users anonymous.
+                            </p>
+                            <div class="card__button">
+                                <button class="button-main" id="button-chatnonymous">
+                                    View The App
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="centered-column margin-gap">
             <h1 class="section-title">Let's Connect!</h1>
             <div class="socials">
-                <div class="social">
-                    <img src="images/twitter-red.png" alt="twitter" />
-                </div>
                 <div class="social">
                     <img src="images/email-red.png" alt="email" />
                 </div>
                 <div class="social">
-                    <img src="images/insta-red.png" alt="instagram" />
+                    <img src="images/twitter-logo.png" alt="twitter" />
+                </div>
+                <div class="social">
+                    <img src="images/insta-logo.png" alt="instagram" />
+                </div>
+                <div class="social">
+                    <img src="images/linkedin-logo.png" alt="instagram" />
                 </div>
             </div>
         </section>
