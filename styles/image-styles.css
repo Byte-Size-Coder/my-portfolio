@@ -1,0 +1,32 @@
+.professional-work__images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.neuro-images {
+    display: flex;
+    gap: 20px;
+}
+
+.personal-work__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rage-image {
+    width: 400px;
+    border-radius: 50%;
+}
+
+.neuro-image {
+    width: 200px;
+    border-radius: 50%;
+}
+
+#doctor {
+    border-radius: 10px;
+}

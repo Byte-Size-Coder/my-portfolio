@@ -12,12 +12,14 @@
         />
         <link href="styles/styles.css" rel="stylesheet" />
         <link href="styles/circle-progress.css" rel="stylesheet" />
+        <link href="styles/image-styles.css" rel="stylesheet" />
+        <script src="main.js"></script>
         <title>Byte Size Coder</title>
     </head>
     <body>
         <section class="intro">
             <div class="half-width all-centered-column">
-                <p class="no-margin">The</p>
+                <p class="no-margin the-text">The</p>
                 <h1 class="main-title no-margin">Byte Size Coder</h1>
             </div>
             <div class="half-width all-centered-row">
@@ -318,7 +320,13 @@
                                 moonball weapon!
                             </p>
                             <div class="card__button">
-                                <button class="button-main" onclick="" id="button-pluto">View Game</button>
+                                <button
+                                    class="button-main"
+                                    onclick="navigate('https://play.google.com/store/apps/details?id=com.RN.Pluto&hl=en_CA&gl=US')"
+                                    id="button-pluto"
+                                >
+                                    View Game
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -349,7 +357,13 @@
                             </p>
                             <p>This app is currently in Beta!</p>
                             <div class="card__button">
-                                <button class="button-main" id="button-neurobody">View App</button>
+                                <button
+                                    onclick="navigate('https://play.google.com/store/apps/details?id=com.Illuminative.NeurobodyApp&hl=en_CA&gl=US')"
+                                    class="button-main"
+                                    id="button-neurobody"
+                                >
+                                    View App
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -381,12 +395,26 @@
                                 functions that handles authentication, database, and file storage.
                             </p>
                             <div class="card__button">
-                                <button class="button-main" id="button-cover">Learn More</button>
+                                <button
+                                    onclick="navigate('https://covermepro.com/')"
+                                    class="button-main"
+                                    id="button-cover"
+                                >
+                                    Learn More
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="professional-work__image"></div>
+                <div class="professional-work__images half-width">
+                    <img src="images/rage-graphic.png" class="rage-image" />
+                    <div class="neuro-images">
+                        <img src="images/pull-up.png" class="neuro-image" />
+                        <img src="images/bench-press.png" class="neuro-image" />
+                        <img src="images/sumo.png" class="neuro-image" />
+                    </div>
+                    <img src="images/rage-screen01.png" class="rage-image" />
+                </div>
             </div>
         </section>
         <section class="all-centered-column body-right">
@@ -394,7 +422,9 @@
                 <h1 class="section-title">My Personal Projects</h1>
             </div>
             <div class="personal-work__content">
-                <div class="personal-work__image"></div>
+                <div class="personal-work__images half-width">
+                    <img src="images/Dr.jpg" id="doctor" />
+                </div>
                 <div class="cards end-alignment half-width">
                     <div class="card">
                         <div class="card__content card__head-section">
@@ -425,7 +455,11 @@
                                 perception and pathfinding sequences.
                             </p>
                             <div class="card__button">
-                                <button class="button-main" id="button-capstan">
+                                <button
+                                    onclick="navigate('https://www.youtube.com/watch?v=ML6IaVAjkMs')"
+                                    class="button-main"
+                                    id="button-capstan"
+                                >
                                     Watch Gameplay
                                 </button>
                             </div>
@@ -458,8 +492,12 @@
                                 data is stored to keep users anonymous.
                             </p>
                             <div class="card__button">
-                                <button class="button-main" id="button-chatnonymous">
-                                    View The App
+                                <button
+                                    onclick="navigate('http://chatnonymous-app.herokuapp.com/')"
+                                    class="button-main"
+                                    id="button-chatnonymous"
+                                >
+                                    Try It Out!
                                 </button>
                             </div>
                         </div>
@@ -468,19 +506,25 @@
             </div>
         </section>
         <section class="centered-column margin-gap">
-            <h1 class="section-title">Let's Connect!</h1>
+            <h1 class="section-title no-margin">Let's Connect</h1>
+            <h2 cl>I am available to discuss any potential collaboration on your project!</h2>
             <div class="socials">
                 <div class="social">
-                    <img src="images/email-red.png" alt="email" />
+                    <a href="mailto:matthew@bytesizecoder.ca"
+                        ><img src="images/email-red.png" alt="Email"
+                    /></a>
                 </div>
-                <div class="social">
-                    <img src="images/twitter-logo.png" alt="twitter" />
+                <div onclick="navigate('https://twitter.com/byte_size_coder')" class="social">
+                    <img src="images/twitter-logo.png" alt="Twitter" />
                 </div>
-                <div class="social">
-                    <img src="images/insta-logo.png" alt="instagram" />
+                <div
+                    onclick="navigate('https://www.linkedin.com/in/matthewwalterdouglas/')"
+                    class="social"
+                >
+                    <img src="images/linkedin-logo.png" alt="LinkedIn" />
                 </div>
-                <div class="social">
-                    <img src="images/linkedin-logo.png" alt="instagram" />
+                <div onclick="navigate('https://github.com/Byte-Size-Coder')" class="social">
+                    <img src="images/github.png" alt="Github" />
                 </div>
             </div>
         </section>
