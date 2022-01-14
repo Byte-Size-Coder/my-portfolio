@@ -12,52 +12,53 @@
         />
         <link href="styles/styles.css" rel="stylesheet" />
         <link href="styles/circle-progress.css" rel="stylesheet" />
-        <link href="styles/image-styles.css" rel="stylesheet" />
         <script src="main.js"></script>
         <title>Byte Size Coder</title>
     </head>
     <body>
         <section class="intro">
-            <div class="half-width all-centered-column">
-                <p class="no-margin the-text">The</p>
-                <h1 class="main-title no-margin">Byte Size Coder</h1>
+            <div class="main-title">
+                <p class="main-title__little-text">The</p>
+                <h1 class="main-title__big-text">Byte Size Coder</h1>
             </div>
-            <div class="half-width all-centered-row">
-                <img src="images/profilePic.png" alt="Profile Picture" />
-            </div>
+            <img class="profile-image" src="images/profile-pic.png" alt="Profile Picture" />
         </section>
-        <section class="all-centered-column">
-            <h1 class="section-title">Hi, I am Matthew Douglas</h1>
-            <div class="half-width">
-                <p class="text">
+        <section class="about-me">
+            <h1 class="section-title align-text">Hi, I am Matthew Douglas</h1>
+            <div class="about-me__description">
+                <p>
                     I am an experienced Software Developer who specializes in both web and game
                     applications. It all started from playing video games and having the curiousity
                     of how they are made and how they can be so much fun!
                 </p>
-                <p class="text">
+                <p>
                     My motivation comes from delivering a memorable experience to all the users
                     through effective design and performant functionality.
                 </p>
-                <p class="text">
+                <p>
                     Feel free to reach out to me about my skills, prior experience, or potential
                     collaboaration on another project!
                 </p>
                 <div class="schools">
-                    <div class="half-width all-centered-column">
+                    <div class="school">
                         <img
                             class="tfs-img"
-                            src="images/tfs.jpeg"
+                            src="images/schools/tfs.jpeg"
                             alt="Toronto Film School"
                             height="100"
                         />
                         <p>Video Game Design & Development</p>
                     </div>
-                    <div class="half-width all-centered-column">
-                        <img src="images/fanshawe.png" alt="Fanshawe College" height="100" />
+                    <div class="school">
+                        <img
+                            src="images/schools/fanshawe.png"
+                            alt="Fanshawe College"
+                            height="100"
+                        />
                         <p>Computer Programmer Analyst</p>
                     </div>
                 </div>
-                <div class="all-centered-row">
+                <div class="about-me__actions">
                     <button class="button-main" id="button-cv">View My CV</button>
                 </div>
             </div>
@@ -65,7 +66,7 @@
 
         <section class="skills">
             <div class="skills-heading">
-                <h1 class="section-title">My Skills</h1>
+                <h1 class="section-title no-margin">My Skills</h1>
                 <h2>Here are my top professional skills that I can provide for any project</h2>
             </div>
             <div class="skills-content">
@@ -287,19 +288,27 @@
                 </div>
             </div>
         </section>
-        <section class="all-centered-column body-left">
+        <section class="professional-work">
             <div class="professional-work__title">
                 <h1 class="section-title">My Professional Work</h1>
             </div>
             <div class="professional-work__content">
-                <div class="cards start-alignment half-width">
+                <div class="cards start-alignment">
                     <div class="card">
                         <div class="card__content card__head-section">
-                            <img src="images/rage-of-pluto.png" width="125" alt="Rage of Pluto" />
+                            <img
+                                src="images/rage-of-pluto/rage-of-pluto.png"
+                                width="125"
+                                alt="Rage of Pluto"
+                            />
                             <div class="project-skills">
-                                <img src="images/unity.png" width="35" />
-                                <img src="images/csharp.png" width="35" />
-                                <img src="images/google-play.png" width="35" />
+                                <img src="images/skill-logos/unity.png" width="35" alt="Unity" />
+                                <img src="images/skill-logos/csharp.png" width="35" alt="C#" />
+                                <img
+                                    src="images/skill-logos/google-play.png"
+                                    width="35"
+                                    alt="Google Play"
+                                />
                             </div>
                             <h2>Rage of Pluto</h2>
                         </div>
@@ -332,12 +341,36 @@
                     </div>
                     <div class="card">
                         <div class="card__content card__head-section">
-                            <img src="images/neurobody.png" width="125" alt="Rage of Pluto" />
+                            <img
+                                src="images/neurobody/neurobody.png"
+                                width="125"
+                                alt="Rage of Pluto"
+                            />
                             <div class="project-skills">
-                                <img src="images/unity.png" width="35" height="40" />
-                                <img src="images/csharp.png" width="35" height="40" />
-                                <img src="images/firebase.png" width="35" height="40" />
-                                <img src="images/google-play.png" width="35" height="40" />
+                                <img
+                                    src="images/skill-logos/unity.png"
+                                    width="35"
+                                    height="40"
+                                    alt="Unity"
+                                />
+                                <img
+                                    src="images/skill-logos/csharp.png"
+                                    width="35"
+                                    height="40"
+                                    alt="C#"
+                                />
+                                <img
+                                    src="images/skill-logos/firebase.png"
+                                    width="35"
+                                    height="40"
+                                    alt="Firebase"
+                                />
+                                <img
+                                    src="images/skill-logos/google-play.png"
+                                    width="35"
+                                    height="40"
+                                    alt="Google Play"
+                                />
                             </div>
                             <h2>Neurobody</h2>
                         </div>
@@ -369,12 +402,36 @@
                     </div>
                     <div class="card">
                         <div class="card__content card__head-section">
-                            <img src="images/cover-me-logo.png" width="125" alt="Rage of Pluto" />
+                            <img
+                                src="images/other-logos/cover-me-logo.png"
+                                width="125"
+                                alt="Cover Me Pro"
+                            />
                             <div class="project-skills">
-                                <img src="images/react.png" width="40" height="40" />
-                                <img src="images/material-ui.png" width="45" height="40" />
-                                <img src="images/typescript.png" width="40" height="40" />
-                                <img src="images/firebase.png" width="35" height="40" />
+                                <img
+                                    src="images/skill-logos/react.png"
+                                    width="40"
+                                    height="40"
+                                    alt="React"
+                                />
+                                <img
+                                    src="images/skill-logos/material-ui.png"
+                                    width="45"
+                                    height="40"
+                                    alt="Material-UI"
+                                />
+                                <img
+                                    src="images/skill-logos/typescript.png"
+                                    width="40"
+                                    height="40"
+                                    alt="TypeScript"
+                                />
+                                <img
+                                    src="images/skill-logos/firebase.png"
+                                    width="35"
+                                    height="40"
+                                    alt="Firebase"
+                                />
                             </div>
                             <h2>Cover Me Pro</h2>
                         </div>
@@ -407,36 +464,77 @@
                     </div>
                 </div>
                 <div class="professional-work__images half-width">
-                    <img src="images/rage-graphic.png" class="rage-image" />
+                    <img
+                        class="rage-image"
+                        src="images/rage-of-pluto/rage-graphic.png"
+                        alt="Rage of Pluto Logo"
+                    />
                     <div class="neuro-images">
-                        <img src="images/pull-up.png" class="neuro-image" />
-                        <img src="images/bench-press.png" class="neuro-image" />
-                        <img src="images/sumo.png" class="neuro-image" />
+                        <img
+                            class="neuro-image"
+                            src="images/neurobody/pull-up.png"
+                            alt="Exercise - Pull Up"
+                        />
+                        <img
+                            class="neuro-image"
+                            src="images/neurobody/bench-press.png"
+                            alt="Exercise - Bench Press"
+                        />
+                        <img
+                            class="neuro-image"
+                            src="images/neurobody/sumo.png"
+                            alt="Exercise - SSumo Deadlift"
+                        />
                     </div>
-                    <img src="images/rage-screen01.png" class="rage-image" />
+                    <img
+                        class="rage-image"
+                        src="images/rage-of-pluto/rage-screen01.png"
+                        alt="Rage of Pluto Screenshot"
+                    />
                 </div>
             </div>
         </section>
-        <section class="all-centered-column body-right">
+        <section class="personal-work">
             <div class="personal-work__title">
                 <h1 class="section-title">My Personal Projects</h1>
             </div>
             <div class="personal-work__content">
                 <div class="personal-work__images half-width">
-                    <img src="images/Dr.jpg" id="doctor" />
+                    <img
+                        id="doctor"
+                        src="images/capstan-gate/captstan-doctor.jpg"
+                        alt="Capstan Gate Title"
+                    />
                 </div>
-                <div class="cards end-alignment half-width">
+                <div class="cards end-alignment">
                     <div class="card">
                         <div class="card__content card__head-section">
                             <img
-                                src="images/capstangate.jpg"
+                                src="images/capstan-gate/capstan-gate.jpg"
                                 width="125"
                                 alt="Capstan Gate"
                                 style="border-radius: 50%"
                             />
                             <div class="project-skills">
-                                <img src="images/ue4.png" width="40" height="40" />
-                                <img src="images/cplusplus.png" width="40" height="40" />
+                                <img
+                                    src="images/skill-logos/ue4.png"
+                                    width="40"
+                                    height="40"
+                                    alt="Unreal Engine 4"
+                                />
+                                <img
+                                    src="images/skill-logos/cplusplus.png"
+                                    width="40"
+                                    height="40"
+                                    alt="C++"
+                                />
+                                <img
+                                    src="images/schools/tfs.jpeg"
+                                    width="40"
+                                    height="40"
+                                    style="border-radius: 50%"
+                                    alt="Toronto Film School"
+                                />
                             </div>
                             <h2>Capstan Gate</h2>
                         </div>
@@ -467,12 +565,100 @@
                     </div>
                     <div class="card">
                         <div class="card__content card__head-section">
-                            <img src="images/Chatnonymous.png" width="125" alt="Chatnonymous" />
+                            <img
+                                src="images/other-logos/bulletin-biz.png"
+                                width="125"
+                                alt="Bulletin Biz"
+                            />
                             <div class="project-skills">
-                                <img src="images/react.png" width="40" height="40" />
-                                <img src="images/material-ui.png" width="45" height="40" />
-                                <img src="images/javascript.png" width="40" height="40" />
-                                <img src="images/node-js.png" width="35" height="40" />
+                                <img
+                                    src="images/skill-logos/react.png"
+                                    width="40"
+                                    height="40"
+                                    alt="React Native"
+                                />
+                                <img
+                                    src="images/skill-logos/firebase.png"
+                                    width="40"
+                                    height="40"
+                                    alt="Firebase"
+                                />
+                                <img
+                                    src="images/skill-logos/javascript.png"
+                                    width="40"
+                                    height="40"
+                                    alt="JavaScript"
+                                />
+                                <img
+                                    src="images/schools/fanshawe.png"
+                                    width="45"
+                                    height="40"
+                                    alt="Fanshawe College"
+                                />
+                            </div>
+                            <h2>Bulletin Biz</h2>
+                        </div>
+                        <div class="card__content">
+                            <p>
+                                Bulletin Biz is a mobile application to bring local businesses and
+                                communities closer to their supported consumers through exclusive
+                                promotional channels. This application will allow users to promote
+                                their business to any consumers within their area without the
+                                competition of larger corporations or franchises on the platform.
+                                Consumers can then view all of these promotions in a convenient way
+                                (like a bulletin board!), learning more about the local community.
+                            </p>
+                            <p>
+                                This was a group student project which I was the primary programmer
+                                for. I made the technical decisions to utilize React-Native and
+                                Firebase to deliver a quick prototype of the application to meet our
+                                class goals. My focus was on creating the UI screens and user flows.
+                                I was also in charge of designating task to other team memebers and
+                                keeping everyone accountable.
+                            </p>
+                            <div class="card__button">
+                                <button
+                                    onclick="navigate('https://www.youtube.com/watch?v=fABuQL62pgM')"
+                                    class="button-main"
+                                    id="button-capstan"
+                                >
+                                    Preview Demo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content card__head-section">
+                            <img
+                                src="images/other-logos/chatnonymous.png"
+                                width="125"
+                                alt="Chatnonymous"
+                            />
+                            <div class="project-skills">
+                                <img
+                                    src="images/skill-logos/react.png"
+                                    width="40"
+                                    height="40"
+                                    alt="React"
+                                />
+                                <img
+                                    src="images/skill-logos/material-ui.png"
+                                    width="45"
+                                    height="40"
+                                    alt="Material-UI"
+                                />
+                                <img
+                                    src="images/skill-logos/javascript.png"
+                                    width="40"
+                                    height="40"
+                                    alt="JavaScript"
+                                />
+                                <img
+                                    src="images/skill-logos/node-js.png"
+                                    width="35"
+                                    height="40"
+                                    alt="NodeJS"
+                                />
                             </div>
                             <h2>Chatnonymous</h2>
                         </div>
@@ -505,26 +691,29 @@
                 </div>
             </div>
         </section>
-        <section class="centered-column margin-gap">
-            <h1 class="section-title no-margin">Let's Connect</h1>
-            <h2 cl>I am available to discuss any potential collaboration on your project!</h2>
+        <section class="connect">
+            <div class="connect__title">
+                <h1 class="section-title no-margin">Let's Connect</h1>
+                <h2>I am available to discuss any potential collaboration on your project!</h2>
+            </div>
+
             <div class="socials">
                 <div class="social">
                     <a href="mailto:matthew@bytesizecoder.ca"
-                        ><img src="images/email-red.png" alt="Email"
+                        ><img src="images/socials/email-red.png" alt="Email"
                     /></a>
                 </div>
                 <div onclick="navigate('https://twitter.com/byte_size_coder')" class="social">
-                    <img src="images/twitter-logo.png" alt="Twitter" />
+                    <img src="images/socials/twitter-logo.png" alt="Twitter" />
                 </div>
                 <div
                     onclick="navigate('https://www.linkedin.com/in/matthewwalterdouglas/')"
                     class="social"
                 >
-                    <img src="images/linkedin-logo.png" alt="LinkedIn" />
+                    <img src="images/socials/linkedin-logo.png" alt="LinkedIn" />
                 </div>
                 <div onclick="navigate('https://github.com/Byte-Size-Coder')" class="social">
-                    <img src="images/github.png" alt="Github" />
+                    <img src="images/socials/github.png" alt="Github" />
                 </div>
             </div>
         </section>

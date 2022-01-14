@@ -1,28 +1,20 @@
+/*GENERIC SETTINGS*/
 body {
     font-family: 'Lato', sans-serif;
     background-color: #f1f2eb;
     margin: 0;
 }
 
+p {
+    font-size: 18px;
+}
+
 .no-margin {
     margin: 0;
 }
 
-.body-left {
-    margin-left: 2rem;
-}
-
-.body-right {
-    margin-right: 2rem;
-}
-
-.text {
-    font-size: 18px;
-}
-
-.the-text {
-    font-size: 20px;
-    font-weight: bold;
+.align-text {
+    text-align: center;
 }
 
 .button-main {
@@ -43,10 +35,6 @@ body {
     background: #df5149;
 }
 
-.main-title {
-    font-size: 72px;
-}
-
 .start-alignment {
     align-items: flex-start;
 }
@@ -59,54 +47,49 @@ body {
     font-size: 48px;
 }
 
-.all-centered-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.centered-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.all-centered-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.centered-row {
-    display: flex;
-    justify-content: center;
-}
-
-.half-width {
-    width: 50%;
-}
-
-.full-width {
-    width: 100%;
-}
+/*Introduction and About Me Settings*/
 
 .intro {
     height: 100vh;
-
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.intro__title p {
-    font-size: 24px;
+.main-title__little-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
 }
 
-.about__content {
-    width: 50%;
-    font-size: 18px;
-    margin-bottom: 1rem;
+.main-title__big-text {
+    font-size: 72px;
+    margin: 0;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me__description {
+    width: 600px;
+}
+
+.about-me__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .schools {
@@ -116,20 +99,37 @@ body {
     align-items: center;
 }
 
+.schools p {
+    font-size: 14px;
+}
+
+.school {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .tfs-img {
     border-radius: 15%;
 }
+
+/*Skills Settings*/
 
 .skills {
     margin-top: 4rem;
 }
 
-.column-gap {
-    gap: 2rem;
+.skills-heading {
+    margin: 0 2rem;
+    text-align: center;
 }
 
-.margin-gap {
-    margin-top: 8rem;
+.skills-content {
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    gap: 4rem;
 }
 
 .skills,
@@ -140,33 +140,16 @@ body {
     align-items: center;
 }
 
-.skills-content {
-    width: 80%;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
-    gap: 4rem;
-}
-
 .skills-content__row {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.professional-work__title {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-.professional-work__content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    gap: 8rem;
 }
 
 .cards {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -182,6 +165,7 @@ body {
     justify-content: space-between;
 }
 
+/*Card Settings*/
 .card__content {
     padding: 10px;
 }
@@ -204,6 +188,70 @@ body {
     justify-content: flex-end;
 }
 
+.project-skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+}
+
+.project-skills img {
+    margin: 0 1rem;
+}
+
+/*My Work Settings*/
+.professional-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.professional-work__title {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.professional-work__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.professional-work__images {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.rage-image {
+    width: 400px;
+    border-radius: 50%;
+}
+
+.neuro-images {
+    display: flex;
+    gap: 20px;
+}
+
+.neuro-image {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.personal-work {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
 .personal-work__title {
     width: 100%;
     display: flex;
@@ -215,6 +263,33 @@ body {
     justify-content: space-between;
     width: 100%;
     position: relative;
+}
+
+.personal-work__images {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#doctor {
+    border-radius: 10px;
+}
+
+/*Connect and Footer Settings*/
+
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.connect__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .socials {
@@ -246,13 +321,141 @@ footer p {
     margin: 0.5rem 0;
 }
 
-.project-skills {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 1rem;
+@media screen and (max-width: 1600px) {
+    .skills-content {
+        width: 100%;
+    }
+
+    .skills-content__row {
+        gap: 4rem;
+    }
+
+    .neuro-image {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .rage-image {
+        width: 350px;
+        border-radius: 50%;
+    }
+
+    #doctor {
+        width: 500px;
+    }
 }
 
-.project-skills img {
-    margin: 0 1rem;
+@media screen and (max-width: 1200px) {
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .skills-content__row {
+        gap: 2rem;
+    }
+
+    .professional-work__content {
+        flex-direction: column;
+    }
+
+    .personal-work__content {
+        flex-direction: column;
+    }
+
+    .professional-work__images {
+        display: none;
+    }
+
+    .personal-work__images {
+        display: none;
+    }
+
+    .cards {
+        width: 100%;
+    }
+
+    .start-alignment,
+    .end-alignment {
+        align-items: center;
+    }
+
+    .body-left,
+    .body-right {
+        margin: 0 2rem;
+    }
+
+    .socials {
+        width: 100%;
+        justify-content: center;
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    #doctor {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .intro {
+        height: 60vh;
+    }
+
+    .about-me__description {
+        width: 95%;
+    }
+
+    .schools {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .card__button {
+        justify-content: center;
+    }
+
+    .half-width {
+        width: 80%;
+    }
+
+    .personal-work__title {
+        margin-top: 4rem;
+    }
+
+    .personal-work__title,
+    .professional-work__title {
+        justify-content: center;
+    }
+    h2 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main-title__big-text {
+        font-size: 48px;
+    }
+
+    .about-me__description {
+        width: 80%;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .socials {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-image {
+        width: 300px;
+    }
 }
