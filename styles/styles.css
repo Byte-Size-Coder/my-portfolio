@@ -399,6 +399,12 @@ footer p {
     }
 }
 
+@media screen and (max-width: 1400px) {
+    #doctor {
+        width: 500px;
+    }
+}
+
 @media screen and (max-width: 680px) {
     .intro {
         height: 60vh;
@@ -419,10 +425,6 @@ footer p {
 
     .card__button {
         justify-content: center;
-    }
-
-    .half-width {
-        width: 80%;
     }
 
     .personal-work__title {
