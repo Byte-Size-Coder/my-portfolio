@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .circle-wrap {
     width: 150px;
     height: 150px;
@@ -25,48 +32,64 @@
 .mask.full-95,
 .circle .fill-95 {
     /* animation: fill ease-in-out 3s; */
+    -webkit-transform: rotate(171deg);
+    -ms-transform: rotate(171deg);
     transform: rotate(171deg);
 }
 
 .mask.full-90,
 .circle .fill-90 {
     /* animation: fill ease-in-out 3s; */
+    -webkit-transform: rotate(162deg);
+    -ms-transform: rotate(162deg);
     transform: rotate(162deg);
 }
 
 .mask.full-85,
 .circle .fill-85 {
     /* animation: fill ease-in-out 3s; */
+    -webkit-transform: rotate(153deg);
+    -ms-transform: rotate(153deg);
     transform: rotate(153deg);
 }
 
 .mask.full-80,
 .circle .fill-80 {
     /* animation: fill ease-in-out 3s; */
+    -webkit-transform: rotate(144deg);
+    -ms-transform: rotate(144deg);
     transform: rotate(144deg);
 }
 
 .mask.full-75,
 .circle .fill-75 {
     /* animation: fill ease-in-out 3s; */
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
     transform: rotate(135deg);
 }
 
 .mask.full-70,
 .circle .fill-70 {
     /* animation: fill ease-in-out 3s; */
+    -webkit-transform: rotate(126deg);
+    -ms-transform: rotate(126deg);
     transform: rotate(126deg);
 }
 
 .mask.full-65,
 .circle .fill-65 {
     /* animation: fill ease-in-out 3s; */
+    -webkit-transform: rotate(117deg);
+    -ms-transform: rotate(117deg);
     transform: rotate(117deg);
 }
 
 .mask.full-60,
 .circle .fill-60 {
     /* animation: fill ease-in-out 3s; */
+    -webkit-transform: rotate(108deg);
+    -ms-transform: rotate(108deg);
     transform: rotate(108deg);
 }
 
@@ -80,9 +103,18 @@
     margin-left: 14px;
     color: white;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     z-index: 100;
     font-weight: 700;
