@@ -74,6 +74,10 @@ p {
     gap: 4rem;
 }
 
+.title-image {
+    width: 450px;
+}
+
 .main-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -89,53 +93,6 @@ p {
     -ms-flex-align: center;
     align-items: center;
     position: relative;
-}
-
-.main-title h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 5px solid black; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    -webkit-animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
-    animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-/* The typing effect */
-@-webkit-keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-/* The typewriter cursor effect */
-@-webkit-keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: black;
-    }
-}
-@keyframes blink-caret {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: black;
-    }
 }
 
 .profile-image {
@@ -210,6 +167,52 @@ p {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+}
+
+.type-animate {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 5px solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    -webkit-animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
 }
 
 .about-me__description {
@@ -625,6 +628,14 @@ footer p {
         gap: 4rem;
     }
 
+    .title-image {
+        width: 400px;
+    }
+
+    .profile-image {
+        width: 350px;
+    }
+
     .skills-content__row {
         gap: 2rem;
     }
@@ -691,6 +702,15 @@ footer p {
 @media screen and (max-width: 680px) {
     .intro {
         height: 60vh;
+        gap: 0.5rem;
+    }
+
+    .title-image {
+        width: 300px;
+    }
+
+    .profile-image {
+        width: 250px;
     }
 
     .about-me__description {
@@ -754,8 +774,5 @@ footer p {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-    }
-    .profile-image {
-        width: 300px;
     }
 }
