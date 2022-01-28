@@ -6,6 +6,7 @@
 */
 
 /*GENERIC SETTINGS*/
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #f1f2eb;
@@ -279,7 +280,8 @@ p {
     text-align: center;
 }
 
-.skills-content {
+.skills-content,
+.skills-content__3 {
     width: 80%;
     margin-top: 2rem;
     margin-bottom: 4rem;
@@ -301,13 +303,21 @@ p {
     align-items: center;
 }
 
+.skills-content__chart {
+    width: 80%;
+    height: 500px;
+}
+
+.skills-content__3,
+.skills-content__chart {
+    display: none;
+}
+
 .skills-content__row {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -699,6 +709,25 @@ footer p {
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .skills-content {
+        display: none;
+    }
+
+    .skills-content__3 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 680px) {
     .intro {
         height: 60vh;
@@ -715,6 +744,14 @@ footer p {
 
     .about-me__description {
         width: 95%;
+    }
+
+    .skills-content__3 {
+        display: none;
+    }
+
+    .skills-content__chart {
+        display: block;
     }
 
     .schools {
@@ -736,6 +773,19 @@ footer p {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+    }
+
+    .professional-work {
+        margin-left: 0;
+    }
+
+    .personal-work {
+        margin-right: 0;
+    }
+
+    .professional-work__content,
+    .personal-work__content {
+        width: 80%;
     }
 
     .personal-work__title {
