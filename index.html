@@ -62,7 +62,13 @@
                     </div>
                 </div>
                 <div class="about-me__actions">
-                    <button class="button-main" id="button-cv">View My CV</button>
+                    <button
+                        onclick="navigate('./Matthew_Douglas-CV.pdf')"
+                        class="button-main"
+                        id="button-cv"
+                    >
+                        View My CV
+                    </button>
                 </div>
             </div>
         </section>
@@ -738,6 +744,67 @@
                     <div class="card">
                         <div class="card__content card__head-section">
                             <img
+                                src="images/other-logos/chatnonymous.png"
+                                width="125"
+                                alt="Chatnonymous"
+                            />
+                            <div class="project-skills">
+                                <img
+                                    src="images/skill-logos/react.png"
+                                    width="40"
+                                    height="40"
+                                    alt="React"
+                                />
+                                <img
+                                    src="images/skill-logos/material-ui.png"
+                                    width="45"
+                                    height="40"
+                                    alt="Material-UI"
+                                />
+                                <img
+                                    src="images/skill-logos/javascript.png"
+                                    width="40"
+                                    height="40"
+                                    alt="JavaScript"
+                                />
+                                <img
+                                    src="images/skill-logos/node-js.png"
+                                    width="35"
+                                    height="40"
+                                    alt="NodeJS"
+                                />
+                            </div>
+                            <h2>Chatnonymous</h2>
+                        </div>
+                        <div class="card__content">
+                            <p>
+                                Chatnonymous is a chat web application that allows users to
+                                communicate anonymously. This was design to create an environment
+                                where people can share their thoughts together without the concern
+                                of your identity attached to these thoughts. This allows discussions
+                                to happen at the clearest level so everyone in that environment can
+                                comprehend and understand.
+                            </p>
+                            <p>
+                                I develop this after graduating from Fanshawe College. There is both
+                                a client (React) and a server (NodeJS) that uses WebSocket
+                                communication. All information is stored in the server, meaning no
+                                data is stored to keep users anonymous.
+                            </p>
+                            <div class="card__button">
+                                <button
+                                    onclick="navigate('http://chatnonymous-app.herokuapp.com/')"
+                                    class="button-main"
+                                    id="button-chatnonymous"
+                                >
+                                    Try It Out!
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content card__head-section">
+                            <img
                                 src="images/capstan-gate/capstan-gate.jpg"
                                 width="125"
                                 alt="Capstan Gate"
@@ -855,67 +922,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="card__content card__head-section">
-                            <img
-                                src="images/other-logos/chatnonymous.png"
-                                width="125"
-                                alt="Chatnonymous"
-                            />
-                            <div class="project-skills">
-                                <img
-                                    src="images/skill-logos/react.png"
-                                    width="40"
-                                    height="40"
-                                    alt="React"
-                                />
-                                <img
-                                    src="images/skill-logos/material-ui.png"
-                                    width="45"
-                                    height="40"
-                                    alt="Material-UI"
-                                />
-                                <img
-                                    src="images/skill-logos/javascript.png"
-                                    width="40"
-                                    height="40"
-                                    alt="JavaScript"
-                                />
-                                <img
-                                    src="images/skill-logos/node-js.png"
-                                    width="35"
-                                    height="40"
-                                    alt="NodeJS"
-                                />
-                            </div>
-                            <h2>Chatnonymous</h2>
-                        </div>
-                        <div class="card__content">
-                            <p>
-                                Chatnonymous is a chat web application that allows users to
-                                communicate anonymously. This was design to create an environment
-                                where people can share their thoughts together without the concern
-                                of your identity attached to these thoughts. This allows discussions
-                                to happen at the clearest level so everyone in that environment can
-                                comprehend and understand.
-                            </p>
-                            <p>
-                                I develop this after graduating from Fanshawe College. There is both
-                                a client (React) and a server (NodeJS) that uses WebSocket
-                                communication. All information is stored in the server, meaning no
-                                data is stored to keep users anonymous.
-                            </p>
-                            <div class="card__button">
-                                <button
-                                    onclick="navigate('http://chatnonymous-app.herokuapp.com/')"
-                                    class="button-main"
-                                    id="button-chatnonymous"
-                                >
-                                    Try It Out!
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -936,6 +942,9 @@
                     class="social"
                 >
                     <img src="images/socials/linkedin-logo.png" alt="LinkedIn" />
+                </div>
+                <div onclick="navigate('https://twitter.com/byte_size_coder')" class="social">
+                    <img src="images/socials/twitter-logo.png" alt="Twitter" />
                 </div>
                 <div onclick="navigate('https://github.com/Byte-Size-Coder')" class="social">
                     <img src="images/socials/github.png" alt="Github" />
