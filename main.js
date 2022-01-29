@@ -2,6 +2,27 @@ function navigate(url) {
     window.open(url, '_blank').focus();
 }
 
+var isNavClosed = true;
+
+function toggleNav() {
+    var links = document.querySelector('.nav__links');
+    console.log(links);
+    console.log(isNavClosed);
+    if (links) {
+        if (isNavClosed) {
+            links.classList.remove('close-links');
+            links.classList.remove('closed-links');
+            links.classList.add('open-links');
+            isNavClosed = false;
+        } else {
+            links.classList.remove('open-links');
+            links.classList.add('closed-links');
+            links.classList.add('close-links');
+            isNavClosed = true;
+        }
+    }
+}
+
 const observer = new IntersectionObserver((enteries) => {
     // Loop over the entries
     enteries.forEach((entry) => {

@@ -17,11 +17,26 @@
         <title>Byte Size Coder</title>
     </head>
     <body>
+        <nav class="nav">
+            <div onclick="toggleNav()" class="nav__icon">
+                <img src="images/logo/bsc-logo-icon.png" height="50px" />
+            </div>
+
+            <div class="nav__links closed-links">
+                <a class="nav__link" href="#about-me" onclick="toggleNav()">About Me</a>
+                <a class="nav__link" href="#skills" onclick="toggleNav()">Skills</a>
+                <a class="nav__link" href="#professional" onclick="toggleNav()"
+                    >Professional Work</a
+                >
+                <a class="nav__link" href="#personal" onclick="toggleNav()">Personal Projects</a>
+                <a class="nav__link" href="#connect" onclick="toggleNav()">Connect</a>
+            </div>
+        </nav>
         <section class="intro">
             <img class="title-image" src="images/logo/bsc-logo.png" alt="Byte Size Coder" />
             <img class="profile-image" src="images/profile-pic.png" alt="Profile Picture" />
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <div class="about-me__title">
                 <h1 class="section-title align-text" id="about-me-title">
                     Hi, I am Matthew Douglas
@@ -32,15 +47,17 @@
                 <p>
                     I am an experienced Software Developer who specializes in both web and game
                     applications. It all started from playing video games and having the curiousity
-                    of how they are made and how they can be so much fun!
+                    of how they are made. Although my journey started with games, I have rounded my
+                    skills to become a generalist programmer in both games and web!
                 </p>
                 <p>
-                    My motivation comes from delivering a memorable experience to all the users
-                    through effective design and performant functionality.
+                    My motivation comes from providing a memorable experience to all users through
+                    effective functionality. Whether that is through awesome gameplay, or delivering
+                    an application that serves its purpose with ease.
                 </p>
                 <p>
                     Feel free to reach out to me about my skills, prior experience, or potential
-                    collaboaration on another project!
+                    collaboaration on any future projects!
                 </p>
                 <div class="schools">
                     <div class="school">
@@ -73,7 +90,7 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="skills">
             <div class="skills-heading">
                 <h1 class="section-title no-margin">My Skills</h1>
                 <h2>Here are my top professional skills that I can provide for any project</h2>
@@ -522,7 +539,7 @@
                 <canvas id="myChart" style="width: 100%; height: 100%"></canvas>
             </div>
         </section>
-        <section class="professional-work">
+        <section class="professional-work" id="professional">
             <div class="professional-work__title">
                 <h1 class="section-title">My Professional Work</h1>
             </div>
@@ -553,20 +570,19 @@
                             </div>
                             <div class="card__content">
                                 <p>
-                                    Rage of Pluto is a mobile physics based side-scrolling action
-                                    arcade game developed for the android platform on the Google
-                                    Play Store. The purpose of the game is to traverse space in
-                                    search of Pluto’s long lost friend Neptune. Players will use the
-                                    Moon ball and dash mechanics to traverse the enemies and
-                                    obstacles.
+                                    Rage of Pluto is a mobile physics based side-scrolling arcade
+                                    game developed for the android platform on the Google Play
+                                    Store. The purpose of the game is to traverse space in search of
+                                    Pluto’s long lost friend Neptune. Players will use the Moon ball
+                                    and dash mechanics to fight through obstacles and enemies.
                                 </p>
                                 <p>
                                     My responsibilites coming into this project was to optimize the
-                                    game as it had poor performance. I was able to invesitgate and
-                                    implement design patterns such as object pooling to drastically
-                                    improve the performance for all mobile devices. I also developed
-                                    several gameplay features that involed the physics and
-                                    interactions of the moonball weapon!
+                                    game. I was able to invesitgate and implement design patterns
+                                    such as object pooling to drastically improve the performance
+                                    for all mobile devices. I also developed several gameplay
+                                    features that involed the physics and interactions of the
+                                    moonball weapon!
                                 </p>
                                 <div class="card__button">
                                     <button
@@ -631,19 +647,21 @@
                             <div class="card__content">
                                 <p>
                                     Neurobody is a encyclopedia application that consist of fully 3D
-                                    exercises for the user to analyze and understand. These
+                                    rendered exercises for the user to analyze and understand. These
                                     exercises are full of information to educate the user such as
                                     Instructions, tips, common avoidances, and muscle engagement.
                                 </p>
                                 <p>
-                                    I was the full-stack developer for this project. I was
-                                    responsible for taking all the visuals (models, animations, UI)
-                                    and developer the features and user flows. The main feature is
-                                    the timeline that is use to traverse through the animation and
-                                    stop at any frame. All data is stored and retreived using the
-                                    firebase sdk for unity.
+                                    I was hired as the full-stack developer for this project. I was
+                                    responsible for taking all visual assets (models, animations,
+                                    UI) and develop all features of this application. One main
+                                    feature is the timeline that is use to traverse through the
+                                    animation and stop at any frame. All data is stored and
+                                    retreived using the firebase sdk for unity.
                                 </p>
-                                <p>This app is currently in Beta!</p>
+                                <p>
+                                    This app as been ongoing development and is currently in Beta!
+                                </p>
                                 <div class="card__button">
                                     <button
                                         onclick="navigate('https://play.google.com/store/apps/details?id=com.Illuminative.NeurobodyApp&hl=en_CA&gl=US')"
@@ -714,19 +732,19 @@
                             <div class="card__content">
                                 <p>
                                     Cover Me Pro is a work scheduling web application that allows
-                                    managers tp schedule shifts to their staff. This also alows
-                                    employees to view and manager thier shifts. They are able to
-                                    trade with eachother, or request vacation/sick leave. This
-                                    application also handle overtime callouts by utiling text
+                                    managers to effectively schedule their staff's shifts. This also
+                                    alows employees to view and manager thier own shifts. They are
+                                    able to trade with eachother, or request vacation/sick leave.
+                                    This application also handle overtime callouts by utiling text
                                     notifcations to all eligible employees.
                                 </p>
 
                                 <p>
                                     This application is currently in development which I am
-                                    responsible for designing all user flow and features and
-                                    implementing them using React and Material UI. All server side
-                                    logic utlize firebase functions that handles authentication,
-                                    database, and file storage.
+                                    responsible for designing all user flow/features. These are
+                                    implemented using React, Typesritp, and Material UI. All server
+                                    side logic utlize firebase cloud functions that handles
+                                    authentication, database, and file storage.
                                 </p>
                                 <div class="card__button">
                                     <button
@@ -745,49 +763,13 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="professional-work__images">
-                    <img
-                        class="rage-image"
-                        src="images/rage-of-pluto/rage-graphic.png"
-                        alt="Rage of Pluto Logo"
-                    />
-                    <div class="neuro-images">
-                        <img
-                            class="neuro-image"
-                            src="images/neurobody/pull-up.png"
-                            alt="Exercise - Pull Up"
-                        />
-                        <img
-                            class="neuro-image"
-                            src="images/neurobody/bench-press.png"
-                            alt="Exercise - Bench Press"
-                        />
-                        <img
-                            class="neuro-image"
-                            src="images/neurobody/sumo.png"
-                            alt="Exercise - SSumo Deadlift"
-                        />
-                    </div>
-                    <img
-                        class="rage-image"
-                        src="images/rage-of-pluto/rage-screen01.png"
-                        alt="Rage of Pluto Screenshot"
-                    />
-                </div> -->
             </div>
         </section>
-        <section class="personal-work">
+        <section class="personal-work" id="personal">
             <div class="personal-work__title">
                 <h1 class="section-title">My Personal Projects</h1>
             </div>
             <div class="personal-work__content">
-                <!-- <div class="personal-work__images">
-                    <img
-                        id="doctor"
-                        src="images/capstan-gate/captstan-doctor.jpg"
-                        alt="Capstan Gate Title"
-                    />
-                </div> -->
                 <div class="cards end-alignment">
                     <div class="card-section">
                         <div class="card-section__images">
@@ -833,15 +815,18 @@
                                     Chatnonymous is a chat web application that allows users to
                                     communicate anonymously. This was design to create an
                                     environment where people can share their thoughts together
-                                    without the concern of your identity attached to these thoughts.
+                                    without the concern of identity attached to the conversation.
                                     This allows discussions to happen at the clearest level so
-                                    everyone in that environment can comprehend and understand.
+                                    everyone in that environment can comprehend and understand
+                                    without judgment.
                                 </p>
                                 <p>
-                                    I develop this after graduating from Fanshawe College. There is
-                                    both a client (React) and a server (NodeJS) that uses WebSocket
-                                    communication. All information is stored in the server, meaning
-                                    no data is stored to keep users anonymous.
+                                    I develop this app after graduating from Fanshawe College. There
+                                    is both a client (React) and a server (NodeJS) that uses
+                                    WebSocket communication. All information is handled on the
+                                    server, meaning no data is stored on any database to keep all
+                                    user's identities and conversation private and within the
+                                    moment.
                                 </p>
                                 <div class="card__button">
                                     <button
@@ -976,13 +961,12 @@
                             <div class="card__content">
                                 <p>
                                     Bulletin Biz is a mobile application to bring local businesses
-                                    and communities closer to their supported consumers through
+                                    and communities closer to their supported customers through
                                     exclusive promotional channels. This application will allow
                                     users to promote their business to any consumers within their
-                                    area without the competition of larger corporations or
-                                    franchises on the platform. Consumers can then view all of these
-                                    promotions in a convenient way (like a bulletin board!),
-                                    learning more about the local community.
+                                    area without the competition of larger corporations on the
+                                    platform. Customers can then view all of these promotions in a
+                                    convenient way (like a bulletin board!)
                                 </p>
                                 <p>
                                     This was a group student project which I was the primary
@@ -1008,7 +992,7 @@
                 </div>
             </div>
         </section>
-        <section class="connect">
+        <section class="connect" id="connect">
             <div class="connect__title">
                 <h1 class="section-title no-margin">Let's Connect</h1>
                 <h2>I am available to discuss any potential collaboration on your project!</h2>
