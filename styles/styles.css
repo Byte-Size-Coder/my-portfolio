@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 /*GENERIC SETTINGS*/
 
 body {
@@ -97,10 +104,7 @@ p {
 }
 
 .profile-image {
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-    -moz-animation: fadein 2s; /* Firefox < 16 */
-    -ms-animation: fadein 2s; /* Internet Explorer */
-    -o-animation: fadein 2s; /* Opera < 12.1 */
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */ /* Firefox < 16 */ /* Internet Explorer */ /* Opera < 12.1 */
     animation: fadein 2s;
 }
 
@@ -114,14 +118,6 @@ p {
 }
 
 /* Firefox < 16 */
-@-moz-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
@@ -134,14 +130,6 @@ p {
 }
 
 /* Internet Explorer */
-@-ms-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
 .main-title__little-text {
     font-size: 20px;
@@ -325,7 +313,7 @@ p {
 }
 
 .cards {
-    width: 50%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -339,8 +327,37 @@ p {
     gap: 24px;
 }
 
+.card-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+}
+
+.card-section__images {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.in-development {
+    border: 4px solid #fe5f55;
+}
+
 .card {
-    width: 100%;
+    width: 50%;
     background-color: white;
     border-radius: 10px;
     -webkit-box-shadow: 3px 4px 3px grey;
@@ -650,6 +667,18 @@ footer p {
         gap: 2rem;
     }
 
+    .card-section {
+        gap: 0;
+    }
+
+    .card-section__images {
+        display: none;
+    }
+
+    .card {
+        width: 100%;
+    }
+
     .professional-work__content {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -683,8 +712,8 @@ footer p {
         align-items: center;
     }
 
-    .body-left,
-    .body-right {
+    .professional-work,
+    .personal-work {
         margin: 0 2rem;
     }
 
@@ -694,18 +723,6 @@ footer p {
         -ms-flex-pack: center;
         justify-content: center;
         gap: 4rem;
-    }
-}
-
-@media screen and (max-width: 1800px) {
-    #doctor {
-        width: 600px;
-    }
-}
-
-@media screen and (max-width: 1400px) {
-    #doctor {
-        width: 500px;
     }
 }
 
@@ -775,12 +792,9 @@ footer p {
         justify-content: center;
     }
 
-    .professional-work {
-        margin-left: 0;
-    }
-
+    .professional-work,
     .personal-work {
-        margin-right: 0;
+        margin: 0;
     }
 
     .professional-work__content,
