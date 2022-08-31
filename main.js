@@ -29,12 +29,43 @@ const observer = new IntersectionObserver((enteries) => {
         // If the element is visible
         if (entry.isIntersecting) {
             // Add the animation class
-            entry.target.classList.add('type-animate');
+            if (entry.target.id === 'about-me-title') {
+                entry.target.classList.add('type-animate');
+            }
+
+            if (entry.target.classList.contains('card-section__left')) {
+                entry.target.querySelector('.card').classList.add('slide-from-left');
+                entry.target
+                    .querySelector('.card-section__images')
+                    .classList.add('slide-from-right');
+            }
+
+            if (entry.target.classList.contains('card-section__right')) {
+                entry.target.querySelector('.card').classList.add('slide-from-right');
+                entry.target
+                    .querySelector('.card-section__images')
+                    .classList.add('slide-from-left');
+            }
+
+            if (entry.target.classList.contains('circle-wrap')) {
+                entry.target.classList.add('open-skill');
+            }
         }
     });
 });
 
 observer.observe(document.querySelector('#about-me-title'));
+
+var cardsLeft = document.querySelectorAll('.card-section__left');
+
+cardsLeft.forEach((card) => observer.observe(card));
+
+var cardsRight = document.querySelectorAll('.card-section__right');
+
+cardsRight.forEach((card) => observer.observe(card));
+
+var cicles = document.querySelectorAll('.circle-wrap');
+cicles.forEach((circle) => observer.observe(circle));
 
 var skills = [
     'React',
