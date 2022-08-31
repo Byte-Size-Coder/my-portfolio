@@ -681,6 +681,12 @@ section {
     border-radius: 50%;
 }
 
+.rocket-image {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .neuro-images {
     display: -webkit-box;
     display: -ms-flexbox;
