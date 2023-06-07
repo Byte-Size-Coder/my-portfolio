@@ -69,23 +69,23 @@ cicles.forEach((circle) => observer.observe(circle));
 
 var skills = [
     'React',
+    'Unity',
     'JavaScript',
     'TypeScript',
     'HTML/CSS',
     'Material-UI',
-    'Unity',
     'C#',
     'Firebase',
-    'UE4',
-    'NodeJS',
+    'Unreal Engine',
+    'Node JS',
+    'Git',
+    'C++',
     'SQL',
     'React Native',
-    'Git',
-    'MongoDB',
-    'C++',
+    'AWS',
 ];
 
-var values = [95, 90, 90, 85, 85, 85, 80, 80, 75, 75, 70, 70, 70, 65, 60];
+var values = [95, 90, 90, 90, 85, 85, 85, 80, 80, 80, 75, 75, 70, 70, 65];
 
 var myChart = new Chart('myChart', {
     type: 'horizontalBar',
