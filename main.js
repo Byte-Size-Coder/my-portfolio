@@ -22,7 +22,6 @@ function toggleNav() {
 		}
 	}
 }
-
 const observer = new IntersectionObserver((enteries) => {
 	// Loop over the entries
 	enteries.forEach((entry) => {
