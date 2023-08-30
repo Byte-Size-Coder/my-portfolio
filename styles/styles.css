@@ -806,16 +806,6 @@ section {
 	font-size: 1.5rem;
 }
 
-.contact h1 {
-	font-size: 2rem;
-	margin: 1rem 0;
-	text-align: left;
-}
-
-.contact p {
-	text-align: center;
-}
-
 .form label {
 	display: block;
 	font-family: 'Oswald', sans-serif;
@@ -1078,6 +1068,14 @@ footer p {
 
 	.nav__icon {
 		margin: 0.5rem;
+	}
+
+	.controls {
+		flex-direction: column;
+	}
+
+	.actions {
+		flex-direction: column;
 	}
 
 	.nav__links {
