@@ -120,3 +120,90 @@ var myChart = new Chart('myChart', {
 		},
 	},
 });
+
+function handleSubmit(event) {
+	event.preventDefault();
+
+	var inputEmail = document.getElementById('email');
+	var inputName = document.getElementById('name');
+	var inputMessage = document.getElementById('message');
+
+	var email = inputEmail.value;
+	var name = inputName.value;
+	var message = inputMessage.value;
+
+	// validate inputs
+	const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+	var errorEmail = document.getElementById('error-email');
+	var errorName = document.getElementById('error-name');
+	var errorMessage = document.getElementById('error-message');
+
+	var hasError = false;
+
+	if (email.trim() === '') {
+		if (errorEmail) {
+			errorEmail.innerHTML = 'email is required';
+			errorEmail.className = 'error';
+			inputEmail.className = 'controlError';
+		}
+		hasError = true;
+	} else if (!email.match(mailformat)) {
+		if (errorEmail) {
+			errorEmail.innerHTML = 'must be valid email';
+			errorEmail.className = 'error';
+			inputEmail.className = 'controlError';
+		}
+		hasError = true;
+	} else {
+		if (errorEmail) {
+			errorEmail.innerHTML = '';
+			errorEmail.className = 'error-hidden';
+			inputEmail.className = '';
+		}
+	}
+
+	if (name.trim() === '') {
+		if (errorName) {
+			errorName.innerHTML = 'name is required';
+			errorName.className = 'error';
+			inputName.className = 'controlError';
+		}
+		hasError = true;
+	} else {
+		if (errorName) {
+			errorName.innerHTML = '';
+			errorName.className = 'error-hidden';
+			inputName.className = '';
+		}
+	}
+
+	if (message.trim() === '') {
+		if (errorMessage) {
+			errorMessage.innerHTML = 'message is required';
+			errorMessage.className = 'error';
+			inputMessage.className = 'controlError';
+		}
+		hasError = true;
+	} else {
+		if (errorMessage) {
+			errorMessage.innerHTML = '';
+			errorMessage.className = 'error-hidden';
+			inputMessage.className = '';
+		}
+	}
+
+	if (hasError) return;
+
+	emailjs.send('service_dal3dto', 'template_mpjbvmu', { name, email, message });
+
+	inputEmail.value = '';
+	inputName.value = '';
+	inputMessage.value = '';
+
+	document.getElementById('message-success').className = 'contact__success';
+
+	// send logic
+}
+
+document.getElementById('submit-button').addEventListener('click', handleSubmit);

@@ -1317,12 +1317,39 @@
 				<h2>I am available to discuss any potential collaboration on your project!</h2>
 			</div>
 
+			<section class="contact">
+				<form class="form">
+					<div class="controls">
+						<div class="control">
+							<label htmlFor="email">Your Email</label>
+							<input type="email" id="email" required />
+							<span id="error-email" class="error-hidden"></span>
+						</div>
+						<div class="control">
+							<label htmlFor="name">Your Name</label>
+							<input type="text" id="name" required />
+							<span id="error-name" class="error-hidden"></span>
+						</div>
+					</div>
+					<div class="control">
+						<label htmlFor="message">Your Message</label>
+						<textarea rows="5" id="message" required></textarea>
+						<span id="error-message" class="error-hidden"></span>
+					</div>
+					<div class="actions">
+						<span class="contact__success-hidden" id="message-success"
+							>Message successfully sent!</span
+						>
+						<button id="submit-button" class="button-main">Send Message</button>
+					</div>
+				</form>
+			</section>
 			<div class="socials">
-				<div class="social">
+				<!-- <div class="social">
 					<a href="mailto:matthew@bytesizecoder.ca"
 						><img src="images/socials/email-red.png" alt="Email"
 					/></a>
-				</div>
+				</div> -->
 				<div
 					onclick="navigate('https://www.linkedin.com/in/matthewwalterdouglas/')"
 					class="social"
@@ -1338,7 +1365,15 @@
 			<p>&copy; 2022 bytesizecoder.ca</p>
 			<p>All Rights Reserved</p>
 		</footer>
-
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
+		<script type="text/javascript">
+			(function () {
+				emailjs.init('h4uAprv3pJZbF0LzP');
+			})();
+		</script>
 		<script src="main.js"></script>
 	</body>
 </html>
