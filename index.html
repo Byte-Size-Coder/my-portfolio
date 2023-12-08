@@ -1,1489 +1,1598 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="/images/logo/bsc-logo-icon.png"
-    />
-    <link rel="image_src" href="/images/logo/bsc-logo-icon.png"">
-    <link href="styles/styles.css" rel="stylesheet" />
-    <link href="styles/circle-progress.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
-    <title>Byte Size Coder</title>
-  </head>
-  <body>
-    <nav class="nav">
-      <div onclick="toggleNav()" class="nav__icon">
-        <img src="images/logo/bsc-logo-icon.png" height="50px" />
-      </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="/images/logo/bsc-logo-icon.png"
+        />
+        <link rel="image_src" href="/images/logo/bsc-logo-icon.png"">
+        <link href="styles/styles.css" rel="stylesheet" />
+        <link href="styles/circle-progress.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <title>Byte Size Coder</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div onclick="toggleNav()" class="nav__icon">
+                <img src="images/logo/bsc-logo-icon.png" height="50px" />
+            </div>
 
-      <div class="nav__links closed-links">
-        <a class="nav__link" href="#about-me" onclick="toggleNav()">About Me</a>
-        <a class="nav__link" href="#skills" onclick="toggleNav()">Skills</a>
-        <a class="nav__link" href="#professional" onclick="toggleNav()"
-          >Professional Work</a
-        >
-        <a class="nav__link" href="#personal" onclick="toggleNav()"
-          >Personal Projects</a
-        >
-        <a class="nav__link" href="#connect" onclick="toggleNav()">Connect</a>
-        <a
-          class="nav__link"
-          href="https://bytesizecoderblog.vercel.app/"
-          target="_blank"
-          >Blog</a
-        >
-      </div>
-    </nav>
-    <section class="intro">
-      <img
-        class="title-image"
-        src="images/logo/bsc-logo.png"
-        alt="Byte Size Coder"
-      />
-      <img
-        class="profile-image"
-        src="images/profile-pic.png"
-        alt="Profile Picture"
-      />
-    </section>
-    <section class="about-me" id="about-me">
-      <div class="about-me__title">
-        <h1 class="section-title align-text" id="about-me-title">
-          Hi, I am Matthew Douglas
-        </h1>
-      </div>
-
-      <div class="about-me__description">
-        <p>
-          I am an experienced Software Developer who specializes in both web and
-          game applications. It all started from playing video games and having
-          the curiousity of how they are made. Although my journey started with
-          games, I have rounded my skills to become a generalist programmer in
-          both games and web!
-        </p>
-        <p>
-          I have cultivated a unique skill set that combines creativity,
-          technical expertise, and a deep passion for crafting immersive digital
-          experiences. Throughout my journey in the world of development, I have
-          achieved significant milestones and continually strive to refine my
-          abilities.
-        </p>
-        <p>
-          Feel free to reach out to me about my skills, prior experience, or
-          potential collaboaration on any future projects!
-        </p>
-        <div class="schools">
-          <div class="school">
+            <div class="nav__links closed-links">
+                <a class="nav__link" href="#about-me" onclick="toggleNav()"
+                    >About Me</a
+                >
+                <a class="nav__link" href="#skills" onclick="toggleNav()"
+                    >Skills</a
+                >
+                <a class="nav__link" href="#professional" onclick="toggleNav()"
+                    >Professional Work</a
+                >
+                <a class="nav__link" href="#personal" onclick="toggleNav()"
+                    >Personal Projects</a
+                >
+                <a class="nav__link" href="#connect" onclick="toggleNav()"
+                    >Connect</a
+                >
+                <a
+                    class="nav__link"
+                    href="https://bytesizecoderblog.vercel.app/"
+                    target="_blank"
+                    >Blog</a
+                >
+            </div>
+        </nav>
+        <section class="intro">
             <img
-              class="tfs-img"
-              src="images/schools/tfs.jpeg"
-              alt="Toronto Film School"
-              height="100"
+                class="title-image"
+                src="images/logo/bsc-logo.png"
+                alt="Byte Size Coder"
             />
-            <p>Video Game Design & Development</p>
-          </div>
-          <div class="school">
             <img
-              src="images/schools/fanshawe.png"
-              alt="Fanshawe College"
-              height="100"
+                class="profile-image"
+                src="images/profile-pic.png"
+                alt="Profile Picture"
             />
-            <p>Computer Programmer Analyst</p>
-          </div>
-        </div>
-        <div class="about-me__actions">
-          <button
-            onclick="navigate('./MatthewDouglas_ResumeCV.pdf')"
-            class="button-main"
-            id="button-cv"
-          >
-            View My CV
-          </button>
-        </div>
-      </div>
-    </section>
+        </section>
+        <section class="about-me" id="about-me">
+            <div class="about-me__title">
+                <h1 class="section-title align-text" id="about-me-title">
+                    Hi, I am Matthew Douglas
+                </h1>
+            </div>
 
-    <section class="skills" id="skills">
-      <div class="skills-heading">
-        <h1 class="section-title no-margin">My Skills</h1>
-        <h2>
-          Here are my top professional skills that I can provide for any project
-        </h2>
-      </div>
-      <div class="skills-content">
-        <div class="skills-content__row">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-95">
-                <div class="fill fill-95"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-95"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">React</span>
-              </div>
+            <div class="about-me__description">
+                <p>
+                    I am an experienced Software Developer who specializes in
+                    both web and game applications. It all started from playing
+                    video games and having the curiousity of how they are made.
+                    Although my journey started with games, I have rounded my
+                    skills to become a generalist programmer in both games and
+                    web!
+                </p>
+                <p>
+                    I have cultivated a unique skill set that combines
+                    creativity, technical expertise, and a deep passion for
+                    crafting immersive digital experiences. Throughout my
+                    journey in the world of development, I have achieved
+                    significant milestones and continually strive to refine my
+                    abilities.
+                </p>
+                <p>
+                    Feel free to reach out to me about my skills, prior
+                    experience, or potential collaboaration on any future
+                    projects!
+                </p>
+                <div class="schools">
+                    <div class="school">
+                        <img
+                            class="tfs-img"
+                            src="images/schools/tfs.jpeg"
+                            alt="Toronto Film School"
+                            height="100"
+                        />
+                        <p>Video Game Design & Development</p>
+                    </div>
+                    <div class="school">
+                        <img
+                            src="images/schools/fanshawe.png"
+                            alt="Fanshawe College"
+                            height="100"
+                        />
+                        <p>Computer Programmer Analyst</p>
+                    </div>
+                </div>
+                <div class="about-me__actions">
+                    <button
+                        onclick="navigate('./MatthewDouglas_ResumeCV.pdf')"
+                        class="button-main"
+                        id="button-cv"
+                    >
+                        View My CV
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-95">
-                <div class="fill fill-95"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-95"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Unity</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-95">
-                <div class="fill fill-95"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-95"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">JavaScript/</span>
-                <span class="circle-heading">TypeScript</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-90">
-                <div class="fill fill-90"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-90"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">C#</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-85">
-                <div class="fill fill-85"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-85"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">HTML/CSS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skills-content__row">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-85">
-                <div class="fill fill-85"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-85"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Unreal</span>
-                <span class="circle-heading">Engine</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-80">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Node JS</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-80">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">C++</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-80">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Firebase</span>
-              </div>
-            </div>
-          </div>
+        </section>
 
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-75">
-                <div class="fill fill-75"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-75"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Git</span>
-              </div>
+        <section class="skills" id="skills">
+            <div class="skills-heading">
+                <h1 class="section-title no-margin">My Skills</h1>
+                <h2>
+                    Here are my top professional skills that I can provide for
+                    any project
+                </h2>
             </div>
-          </div>
-        </div>
-        <div class="skills-content__row">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-70">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Databases</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-70">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">AWS</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-65">
-                <div class="fill fill-65"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-65"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Angular</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-70">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">NextJS</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-70">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">.NET</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="skills-content__3">
-        <div class="skills-content__row">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-95">
-                <div class="fill fill-95"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-95"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">React</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-90">
-                <div class="fill fill-90"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-90"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Unity</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-95">
-                <div class="fill fill-95"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-95"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">JavaScript/</span>
-                <span class="circle-heading">TypeScript</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skills-content__row">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-85">
-                <div class="fill fill-85"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-85"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">C#</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-80">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Unreal</span>
-                <span class="circle-heading">Engine</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-80">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">HTML/CSS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skills-content__row">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-80">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">C++</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-80">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Firebase</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-80">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-80"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Node JS</span>
-              </div>
-            </div>
-          </div>
-        </div>
+            <div class="skills-content">
+                <div class="skills-content__row">
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-95">
+                                <div class="fill fill-95"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-95"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">React</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-95">
+                                <div class="fill fill-95"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-95"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Unity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-95">
+                                <div class="fill fill-95"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-95"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">JavaScript/</span>
+                                <span class="circle-heading">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-90">
+                                <div class="fill fill-90"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-90"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">C#</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-85">
+                                <div class="fill fill-85"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-85"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-content__row">
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-85">
+                                <div class="fill fill-85"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-85"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Unreal</span>
+                                <span class="circle-heading">Engine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-80">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Node JS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-80">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">C++</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-80">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
 
-        <div class="skills-content__row">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-75">
-                <div class="fill fill-75"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-75"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Git</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-70">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Databases</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-70">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">AWS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="skills-content__row">
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-70">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">Angular</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-70">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">NextJS</span>
-              </div>
-            </div>
-          </div>
-          <div class="circle-wrap">
-            <div class="circle">
-              <div class="mask full-70">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="mask half">
-                <div class="fill fill-70"></div>
-              </div>
-              <div class="inside-circle">
-                <span class="circle-heading">.NET</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="skills-content__chart" style="height: 300px">
-        <canvas id="myChart" style="width: 100%; height: 100%"></canvas>
-      </div>
-    </section>
-    <section class="professional-work" id="professional">
-      <div class="professional-work__title">
-        <h1 class="section-title">My Professional Work</h1>
-      </div>
-      <div class="professional-work__content">
-        <div class="cards start-alignment">
-          <div class="card-section card-section__left">
-            <div class="card">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/other-logos/cover-me-logo.png"
-                  width="125"
-                  alt="Cover Me Pro"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/react.png"
-                    width="40"
-                    height="40"
-                    alt="React"
-                  />
-                  <img
-                    src="images/skill-logos/material-ui.png"
-                    width="45"
-                    height="40"
-                    alt="Material-UI"
-                  />
-                  <img
-                    src="images/skill-logos/typescript.png"
-                    width="40"
-                    height="40"
-                    alt="TypeScript"
-                  />
-                  <img
-                    src="images/skill-logos/firebase.png"
-                    width="35"
-                    height="40"
-                    alt="Firebase"
-                  />
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-75">
+                                <div class="fill fill-75"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-75"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Git</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h2>Cover Me Pro</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    Cover Me Pro is a work scheduling web application that
-                    allows managers to effectively schedule their staff's
-                    shifts. This also alows employees to view and manager thier
-                    own shifts. They are able to trade with eachother, or
-                    request vacation/sick leave. This application also handle
-                    overtime callouts by utiling text notifcations to all
-                    eligible employees.
-                  </p>
+                <div class="skills-content__row">
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-70">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Databases</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-70">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">AWS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-65">
+                                <div class="fill fill-65"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-65"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Angular</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-70">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">NextJS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-70">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">.NET</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-content__3">
+                <div class="skills-content__row">
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-95">
+                                <div class="fill fill-95"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-95"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">React</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-90">
+                                <div class="fill fill-90"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-90"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Unity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-95">
+                                <div class="fill fill-95"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-95"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">JavaScript/</span>
+                                <span class="circle-heading">TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-content__row">
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-85">
+                                <div class="fill fill-85"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-85"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">C#</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-80">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Unreal</span>
+                                <span class="circle-heading">Engine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-80">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-content__row">
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-80">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">C++</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-80">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Firebase</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-80">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-80"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Node JS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                  <p>
-                    I was hired for designing all user flow/features. These are
-                    developed using React, TypeScript, and Material UI. All
-                    server side logic utlize firebase cloud functions that
-                    handles authentication, database, and file storage.
-                  </p>
+                <div class="skills-content__row">
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-75">
+                                <div class="fill fill-75"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-75"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-70">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Databases</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-70">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">AWS</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card__button">
-                  <button
-                    onclick="navigate('https://covermepro.com/')"
-                    class="button-main"
-                    id="button-cover"
-                  >
-                    Learn More
-                  </button>
+                <div class="skills-content__row">
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-70">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">Angular</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-70">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">NextJS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="circle-wrap">
+                        <div class="circle">
+                            <div class="mask full-70">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="mask half">
+                                <div class="fill fill-70"></div>
+                            </div>
+                            <div class="inside-circle">
+                                <span class="circle-heading">.NET</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="card-section__images">
-              <img src="images/logo/bsc-logo-icon.png" width="200" />
-              <h2>Currently In Development!</h2>
+            <div class="skills-content__chart" style="height: 300px">
+                <canvas id="myChart" style="width: 100%; height: 100%"></canvas>
             </div>
-          </div>
+        </section>
+        <section class="professional-work" id="professional">
+            <div class="professional-work__title">
+                <h1 class="section-title">My Professional Work</h1>
+            </div>
+            <div class="professional-work__content">
+                <div class="cards start-alignment">
+                    <div class="card-section card-section__left">
+                        <div class="card">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/other-logos/cover-me-logo.png"
+                                    width="125"
+                                    alt="Cover Me Pro"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/react.png"
+                                        width="40"
+                                        height="40"
+                                        alt="React"
+                                    />
+                                    <img
+                                        src="images/skill-logos/material-ui.png"
+                                        width="45"
+                                        height="40"
+                                        alt="Material-UI"
+                                    />
+                                    <img
+                                        src="images/skill-logos/typescript.png"
+                                        width="40"
+                                        height="40"
+                                        alt="TypeScript"
+                                    />
+                                    <img
+                                        src="images/skill-logos/firebase.png"
+                                        width="35"
+                                        height="40"
+                                        alt="Firebase"
+                                    />
+                                </div>
+                                <h2>Cover Me Pro</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        Cover Me Pro is a work scheduling web
+                                        application that allows managers to
+                                        effectively schedule their staff's
+                                        shifts. This also alows employees to
+                                        view and manager thier own shifts. They
+                                        are able to trade with eachother, or
+                                        request vacation/sick leave. This
+                                        application also handle overtime
+                                        callouts by utiling text notifcations to
+                                        all eligible employees.
+                                    </p>
 
-          <div class="card-section card-section__left">
-            <div class="card-section__images">
-              <img
-                src="images/pot/pot.jpg"
-                width="500"
-                style="border-radius: 3%"
-              />
-            </div>
-            <div class="card">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/pot/pot-logo.png"
-                  width="200"
-                  alt="Path of Titans"
-                  style="border-radius: 10%"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/ue4.png"
-                    width="40"
-                    height="40"
-                    alt="Unreal Engine 5"
-                  />
-                  <img
-                    src="images/skill-logos/cplusplus.png"
-                    width="40"
-                    height="40"
-                    alt="C++"
-                  />
-                </div>
-                <h2>Path of Titans</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    Path of Titans is a MMO Survival game where you play as
-                    Dinosaurs in prehistoric times. Complete quest, challenge
-                    other players, and grow your dino from a youngling to a
-                    roaring adult!
-                  </p>
-                  <p>
-                    This game is being develop by Alderon Games in Unreal Engine
-                    5. I was part of a third party team (Joydrop) who joined in
-                    to assist them in creating major updates to the game. These
-                    updates included new flying and swimming dinosaurs, brand
-                    new combat and abilites, and more quest updates.
-                  </p>
-                  <p>
-                    My noteable work was expanding on their combat system to
-                    implement Area of Effect attacks and other additional
-                    abilites. I also assisted in some optimization issues and a
-                    handful of bugs.
-                  </p>
-                </div>
-                <div class="card__button">
-                  <button
-                    onclick="navigate('https://pathoftitans.com/')"
-                    class="button-main"
-                    id="button-cover"
-                  >
-                    View Game
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-section card-section__left">
-            <div class="card">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/rocket-recover/poster-rr.png"
-                  width="200"
-                  alt="Rocket Recover"
-                  style="border-radius: 10%"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/unity.png"
-                    width="40"
-                    height="40"
-                    alt="Unity"
-                  />
-                  <img src="images/skill-logos/csharp.png" width="40"
-                  height="40" alt="C#"" />
-                  <img
-                    src="images/skill-logos/google-play.png"
-                    width="40"
-                    height="40"
-                    alt="Google Play"
-                  />
-                  <img
-                    src="images/skill-logos/ios.png"
-                    width="40"
-                    height="40"
-                    alt="IOS"
-                  />
-                </div>
-                <h2>Rocket Recover</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    Rocket Recover is a mobile obstacle avoidance game on both
-                    Android and iOS. Players can choose from multiple ships with
-                    unique stats and powers to try to reach the highest scores.
-                    Customization of the environment (Background, obstacles,
-                    music) give the player a personal experience.
-                  </p>
-                  <p>
-                    I was the primary game designer and developer of this game
-                    which was released under Cat Splat Studios. I work on most
-                    of the game mechanics and the deployment for the google play
-                    store and the Apple iOS store. This game also included
-                    services like leaderboards and ads.
-                  </p>
-                  <p>
-                    Although it is no longer on both stores, this was a great
-                    accomplishmnet for me as it was my first publication as a
-                    primary designer and developer. You can view the gameplay
-                    and also code structure on my Github Profile.
-                  </p>
-                </div>
-                <div class="card__button">
-                  <button
-                    onclick="navigate('https://youtu.be/6MBp4RPGWVM')"
-                    class="button-main"
-                    id="button-cover"
-                  >
-                    View Gameplay
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card-section__images">
-              <img src="images/rocket-recover/hud-rr.png" width="400" />
-              <div class="rocket-image">
-                <img src="images/rocket-recover/Dagger.png" width="200" />
-                <img
-                  src="images/rocket-recover/RocketRecover.gif"
-                  width="300"
-                />
-                <img src="images/rocket-recover/Rocket-Mk2.png" width="200" />
-              </div>
-              <img src="images/rocket-recover/pick-ups.png" width="400" />
-            </div>
-          </div>
-          <div class="card-section card-section__left">
-            <div class="card-section__images">
-              <img src="images/doppletone/doppletone-1.jpg" width="700" />
-            </div>
-            <div class="card">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/doppletone/doppletone-logo.jpg"
-                  width="200"
-                  alt="Doppeltone"
-                  style="border-radius: 10%"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/unity.png"
-                    width="40"
-                    height="40"
-                    alt="Unity"
-                  />
-                  <img
-                    src="images/skill-logos/csharp.png"
-                    width="40"
-                    height="40"
-                    alt="C#"
-                  />
-                  <div class="separate">/</div>
+                                    <p>
+                                        I was hired for designing all user
+                                        flow/features. These are developed using
+                                        React, TypeScript, and Material UI. All
+                                        server side logic utlize firebase cloud
+                                        functions that handles authentication,
+                                        database, and file storage.
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        onclick="navigate('https://covermepro.com/')"
+                                        class="button-main"
+                                        id="button-cover"
+                                    >
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-section__images">
+                            <img
+                                src="images/logo/bsc-logo-icon.png"
+                                width="200"
+                            />
+                            <h2>Currently In Development!</h2>
+                        </div>
+                    </div>
 
-                  <img
-                    src="images/skill-logos/react.png"
-                    width="40"
-                    height="40"
-                    alt="React"
-                  />
-                  <img
-                    src="images/skill-logos/typescript.png"
-                    width="40"
-                    height="40"
-                    alt="TypeScript"
-                  />
-                </div>
-                <h2>Doppeltone 1.0/2.0</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    Doppleltone 1.0 (also called Project Ambisonic) was
-                    developed through Mikutech for client Andrea Spaziani.
-                    Funded by the Canada Council for the Arts, this software is
-                    designed to allow for the visually impaired to enjoy a dance
-                    performance, via sound effects - which are arranged by the
-                    user.
-                  </p>
-                  <p>
-                    I was one of out 2 developers to create this application in
-                    Unity using the FMOD library. I worked primarily on the UI,
-                    track recordings and 3D spatial audio.
-                  </p>
-                  <p>
-                    This project is currently in discussion to move to a web
-                    application which I will be the primary programmer
-                    responsible for (Doppeltone 2.0)
-                  </p>
-                </div>
-                <div class="card__button"></div>
-              </div>
-            </div>
-          </div>
-          <div class="card-section card-section__left">
-            <div class="card card__left">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/rage-of-pluto/rage-of-pluto.png"
-                  width="125"
-                  alt="Rage of Pluto"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/unity.png"
-                    width="35"
-                    alt="Unity"
-                  />
-                  <img
-                    src="images/skill-logos/csharp.png"
-                    width="35"
-                    alt="C#"
-                  />
-                  <img
-                    src="images/skill-logos/google-play.png"
-                    width="35"
-                    alt="Google Play"
-                  />
-                </div>
-                <h2>Rage of Pluto</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    Rage of Pluto is a mobile physics based side-scrolling
-                    arcade game developed for the android platform on the Google
-                    Play Store. The purpose of the game is to traverse space in
-                    search of Pluto’s long lost friend Neptune. Players will use
-                    the Moon ball and dash mechanics to fight through obstacles
-                    and enemies.
-                  </p>
-                  <p>
-                    My responsibilites coming into this project was to optimize
-                    the game. I was able to invesitgate and implement design
-                    patterns such as object pooling to drastically improve the
-                    performance for all mobile devices. I also developed several
-                    gameplay features that involed the physics and interactions
-                    of the moonball weapon!
-                  </p>
-                  <p>
-                    This game has since been taken down on the google play
-                    store, but it was a great experience working on this project
-                    and showing it off at events such as Game Slice.
-                  </p>
-                </div>
-                <div class="card__button">
-                  <button
-                    class="button-main"
-                    onclick="navigate('https://www.youtube.com/watch?v=J_nIYK0piPU')"
-                    id="button-pluto"
-                  >
-                    View Gameplay
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card-section__images">
-              <img
-                class="rage-image"
-                src="images/rage-of-pluto/rage-graphic.png"
-                alt="Rage of Pluto Logo"
-              />
-              <img
-                class="rage-image"
-                src="images/rage-of-pluto/rage-screen01.png"
-                alt="Rage of Pluto Screenshot"
-              />
-            </div>
-          </div>
-          <div class="card-section card-section__left">
-            <div class="card-section__images">
-              <div class="neuro-images">
-                <img
-                  class="neuro-image"
-                  src="images/neurobody/pull-up.png"
-                  alt="Exercise - Pull Up"
-                />
-                <img
-                  class="neuro-image"
-                  src="images/neurobody/bench-press.png"
-                  alt="Exercise - Bench Press"
-                />
-                <img
-                  class="neuro-image"
-                  src="images/neurobody/sumo.png"
-                  alt="Exercise - SSumo Deadlift"
-                />
-              </div>
-            </div>
-            <div class="card card__left">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/neurobody/neurobody.png"
-                  width="125"
-                  alt="Rage of Pluto"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/unity.png"
-                    width="35"
-                    height="40"
-                    alt="Unity"
-                  />
-                  <img
-                    src="images/skill-logos/csharp.png"
-                    width="35"
-                    height="40"
-                    alt="C#"
-                  />
-                  <img
-                    src="images/skill-logos/firebase.png"
-                    width="35"
-                    height="40"
-                    alt="Firebase"
-                  />
-                  <img
-                    src="images/skill-logos/google-play.png"
-                    width="35"
-                    height="40"
-                    alt="Google Play"
-                  />
-                </div>
-                <h2>Neurobody</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    Neurobody is a encyclopedia application that consist of
-                    fully 3D rendered exercises for the user to analyze and
-                    understand. These exercises are full of information to
-                    educate the user such as Instructions, tips, common
-                    avoidances, and muscle engagement.
-                  </p>
-                  <p>
-                    I was hired as the full-stack developer for this project. I
-                    was responsible for taking all visual assets (models,
-                    animations, UI) and develop all features of this
-                    application. One main feature is the timeline that is use to
-                    traverse through the animation and stop at any frame. All
-                    data is stored and retreived using the firebase sdk for
-                    unity.
-                  </p>
-                  <p>
-                    This app as been ongoing development and is currently in
-                    Beta!
-                  </p>
-                </div>
-                <div class="card__button">
-                  <button
-                    onclick="navigate('https://play.google.com/store/apps/details?id=com.Illuminative.NeurobodyApp&hl=en_CA&gl=US')"
-                    class="button-main"
-                    id="button-neurobody"
-                  >
-                    View App
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="personal-work" id="personal">
-      <div class="personal-work__title">
-        <h1 class="section-title">My Personal Projects</h1>
-      </div>
+                    <div class="card-section card-section__left">
+                        <div class="card-section__images">
+                            <img
+                                src="images/pot/pot.jpg"
+                                width="500"
+                                style="border-radius: 3%"
+                            />
+                        </div>
+                        <div class="card">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/pot/pot-logo.png"
+                                    width="200"
+                                    alt="Path of Titans"
+                                    style="border-radius: 10%"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/ue4.png"
+                                        width="40"
+                                        height="40"
+                                        alt="Unreal Engine 5"
+                                    />
+                                    <img
+                                        src="images/skill-logos/cplusplus.png"
+                                        width="40"
+                                        height="40"
+                                        alt="C++"
+                                    />
+                                </div>
+                                <h2>Path of Titans</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        Path of Titans is a MMO Survival game
+                                        where you play as Dinosaurs in
+                                        prehistoric times. Complete quest,
+                                        challenge other players, and grow your
+                                        dino from a youngling to a roaring
+                                        adult!
+                                    </p>
+                                    <p>
+                                        This game is being develop by Alderon
+                                        Games in Unreal Engine 5. I was part of
+                                        a third party team (Joydrop) who joined
+                                        in to assist them in creating major
+                                        updates to the game. These updates
+                                        included new flying and swimming
+                                        dinosaurs, brand new combat and
+                                        abilites, and more quest updates.
+                                    </p>
+                                    <p>
+                                        My noteable work was expanding on their
+                                        combat system to implement Area of
+                                        Effect attacks and other additional
+                                        abilites. I also assisted in some
+                                        optimization issues and a handful of
+                                        bugs.
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        onclick="navigate('https://pathoftitans.com/')"
+                                        class="button-main"
+                                        id="button-cover"
+                                    >
+                                        View Game
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-section card-section__left">
+                        <div class="card">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/rocket-recover/poster-rr.png"
+                                    width="200"
+                                    alt="Rocket Recover"
+                                    style="border-radius: 10%"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/unity.png"
+                                        width="40"
+                                        height="40"
+                                        alt="Unity"
+                                    />
+                                    <img src="images/skill-logos/csharp.png"
+                                    width="40" height="40" alt="C#"" />
+                                    <img
+                                        src="images/skill-logos/google-play.png"
+                                        width="40"
+                                        height="40"
+                                        alt="Google Play"
+                                    />
+                                    <img
+                                        src="images/skill-logos/ios.png"
+                                        width="40"
+                                        height="40"
+                                        alt="IOS"
+                                    />
+                                </div>
+                                <h2>Rocket Recover</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        Rocket Recover is a mobile obstacle
+                                        avoidance game on both Android and iOS.
+                                        Players can choose from multiple ships
+                                        with unique stats and powers to try to
+                                        reach the highest scores. Customization
+                                        of the environment (Background,
+                                        obstacles, music) give the player a
+                                        personal experience.
+                                    </p>
+                                    <p>
+                                        I was the primary game designer and
+                                        developer of this game which was
+                                        released under Cat Splat Studios. I work
+                                        on most of the game mechanics and the
+                                        deployment for the google play store and
+                                        the Apple iOS store. This game also
+                                        included services like leaderboards and
+                                        ads.
+                                    </p>
+                                    <p>
+                                        Although it is no longer on both stores,
+                                        this was a great accomplishmnet for me
+                                        as it was my first publication as a
+                                        primary designer and developer. You can
+                                        view the gameplay and also code
+                                        structure on my Github Profile.
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        onclick="navigate('https://youtu.be/6MBp4RPGWVM')"
+                                        class="button-main"
+                                        id="button-cover"
+                                    >
+                                        View Gameplay
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-section__images">
+                            <img
+                                src="images/rocket-recover/hud-rr.png"
+                                width="400"
+                            />
+                            <div class="rocket-image">
+                                <img
+                                    src="images/rocket-recover/Dagger.png"
+                                    width="200"
+                                />
+                                <img
+                                    src="images/rocket-recover/RocketRecover.gif"
+                                    width="300"
+                                />
+                                <img
+                                    src="images/rocket-recover/Rocket-Mk2.png"
+                                    width="200"
+                                />
+                            </div>
+                            <img
+                                src="images/rocket-recover/pick-ups.png"
+                                width="400"
+                            />
+                        </div>
+                    </div>
+                    <div class="card-section card-section__left">
+                        <div class="card-section__images">
+                            <img
+                                src="images/doppletone/doppletone-1.jpg"
+                                width="700"
+                            />
+                        </div>
+                        <div class="card">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/doppletone/doppletone-logo.jpg"
+                                    width="200"
+                                    alt="Doppeltone"
+                                    style="border-radius: 10%"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/unity.png"
+                                        width="40"
+                                        height="40"
+                                        alt="Unity"
+                                    />
+                                    <img
+                                        src="images/skill-logos/csharp.png"
+                                        width="40"
+                                        height="40"
+                                        alt="C#"
+                                    />
+                                    <div class="separate">/</div>
 
-      <div class="personal-work__content">
-        <div class="cards end-alignment">
-          <div class="card-section card-section__right">
-            <div class="card">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/logo/bsc-logo-icon.png"
-                  width="125"
-                  alt="Capstan Gate"
-                  style="border-radius: 50%"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/unity.png"
-                    width="40"
-                    height="40"
-                    alt="Unity"
-                  />
-                  <img
-                    src="images/skill-logos/csharp.png"
-                    width="40"
-                    height="40"
-                    alt="C#"
-                  />
+                                    <img
+                                        src="images/skill-logos/react.png"
+                                        width="40"
+                                        height="40"
+                                        alt="React"
+                                    />
+                                    <img
+                                        src="images/skill-logos/typescript.png"
+                                        width="40"
+                                        height="40"
+                                        alt="TypeScript"
+                                    />
+                                </div>
+                                <h2>Doppeltone 1.0/2.0</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        Doppleltone 1.0 (also called Project
+                                        Ambisonic) was developed through
+                                        Mikutech for client Andrea Spaziani.
+                                        Funded by the Canada Council for the
+                                        Arts, this software is designed to allow
+                                        for the visually impaired to enjoy a
+                                        dance performance, via sound effects -
+                                        which are arranged by the user.
+                                    </p>
+                                    <p>
+                                        I was one of out 2 developers to create
+                                        this application in Unity using the FMOD
+                                        library. I worked primarily on the UI,
+                                        track recordings and 3D spatial audio.
+                                    </p>
+                                    <p>
+                                        This project is currently in discussion
+                                        to move to a web application which I
+                                        will be the primary programmer
+                                        responsible for (Doppeltone 2.0)
+                                    </p>
+                                </div>
+                                <div class="card__button"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-section card-section__left">
+                        <div class="card card__left">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/rage-of-pluto/rage-of-pluto.png"
+                                    width="125"
+                                    alt="Rage of Pluto"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/unity.png"
+                                        width="35"
+                                        alt="Unity"
+                                    />
+                                    <img
+                                        src="images/skill-logos/csharp.png"
+                                        width="35"
+                                        alt="C#"
+                                    />
+                                    <img
+                                        src="images/skill-logos/google-play.png"
+                                        width="35"
+                                        alt="Google Play"
+                                    />
+                                </div>
+                                <h2>Rage of Pluto</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        Rage of Pluto is a mobile physics based
+                                        side-scrolling arcade game developed for
+                                        the android platform on the Google Play
+                                        Store. The purpose of the game is to
+                                        traverse space in search of Pluto’s long
+                                        lost friend Neptune. Players will use
+                                        the Moon ball and dash mechanics to
+                                        fight through obstacles and enemies.
+                                    </p>
+                                    <p>
+                                        My responsibilites coming into this
+                                        project was to optimize the game. I was
+                                        able to invesitgate and implement design
+                                        patterns such as object pooling to
+                                        drastically improve the performance for
+                                        all mobile devices. I also developed
+                                        several gameplay features that involed
+                                        the physics and interactions of the
+                                        moonball weapon!
+                                    </p>
+                                    <p>
+                                        This game has since been taken down on
+                                        the google play store, but it was a
+                                        great experience working on this project
+                                        and showing it off at events such as
+                                        Game Slice.
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        class="button-main"
+                                        onclick="navigate('https://www.youtube.com/watch?v=J_nIYK0piPU')"
+                                        id="button-pluto"
+                                    >
+                                        View Gameplay
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-section__images">
+                            <img
+                                class="rage-image"
+                                src="images/rage-of-pluto/rage-graphic.png"
+                                alt="Rage of Pluto Logo"
+                            />
+                            <img
+                                class="rage-image"
+                                src="images/rage-of-pluto/rage-screen01.png"
+                                alt="Rage of Pluto Screenshot"
+                            />
+                        </div>
+                    </div>
+                    <div class="card-section card-section__left">
+                        <div class="card-section__images">
+                            <div class="neuro-images">
+                                <img
+                                    class="neuro-image"
+                                    src="images/neurobody/pull-up.png"
+                                    alt="Exercise - Pull Up"
+                                />
+                                <img
+                                    class="neuro-image"
+                                    src="images/neurobody/bench-press.png"
+                                    alt="Exercise - Bench Press"
+                                />
+                                <img
+                                    class="neuro-image"
+                                    src="images/neurobody/sumo.png"
+                                    alt="Exercise - SSumo Deadlift"
+                                />
+                            </div>
+                        </div>
+                        <div class="card card__left">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/neurobody/neurobody.png"
+                                    width="125"
+                                    alt="Rage of Pluto"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/unity.png"
+                                        width="35"
+                                        height="40"
+                                        alt="Unity"
+                                    />
+                                    <img
+                                        src="images/skill-logos/csharp.png"
+                                        width="35"
+                                        height="40"
+                                        alt="C#"
+                                    />
+                                    <img
+                                        src="images/skill-logos/firebase.png"
+                                        width="35"
+                                        height="40"
+                                        alt="Firebase"
+                                    />
+                                    <img
+                                        src="images/skill-logos/google-play.png"
+                                        width="35"
+                                        height="40"
+                                        alt="Google Play"
+                                    />
+                                </div>
+                                <h2>Neurobody</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        Neurobody is a encyclopedia application
+                                        that consist of fully 3D rendered
+                                        exercises for the user to analyze and
+                                        understand. These exercises are full of
+                                        information to educate the user such as
+                                        Instructions, tips, common avoidances,
+                                        and muscle engagement.
+                                    </p>
+                                    <p>
+                                        I was hired as the full-stack developer
+                                        for this project. I was responsible for
+                                        taking all visual assets (models,
+                                        animations, UI) and develop all features
+                                        of this application. One main feature is
+                                        the timeline that is use to traverse
+                                        through the animation and stop at any
+                                        frame. All data is stored and retreived
+                                        using the firebase sdk for unity.
+                                    </p>
+                                    <p>
+                                        This app as been ongoing development and
+                                        is currently in Beta!
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        onclick="navigate('https://play.google.com/store/apps/details?id=com.Illuminative.NeurobodyApp&hl=en_CA&gl=US')"
+                                        class="button-main"
+                                        id="button-neurobody"
+                                    >
+                                        View App
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <h2>Western VR Shooter</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    I love the western theme! So I decided to use my Oculus to
-                    start developing some VR games! This is the first mini game
-                    in a mixture of western shooter theme. You have two
-                    revolvers and must shoot as many flying barrels as possible.
-                  </p>
-                  <p>
-                    This uses Unity Open XR and XR interaction toolkit to
-                    establish the base mechanics, I added the gunplay ability
-                    for shooting and reloading. Plans are to add other mini
-                    games like a western standoff mini game and other ideas!
-                  </p>
-                </div>
-                <div class="card__button">
-                  <button
-                    onclick="navigate('https://github.com/Byte-Size-Coder/ShooterVR')"
-                    class="button-main"
-                  >
-                    View Repo
-                  </button>
-                  <button
-                    onclick="navigate('https://youtu.be/aoOtOSnDRnQ')"
-                    class="button-main"
-                  >
-                    View Full Demo
-                  </button>
-                </div>
-              </div>
             </div>
-            <div class="card-section__images">
-              <img
-                src="images/westernVR/WesternVRShooterDemo.gif"
-                width="500"
-              />
+        </section>
+        <section class="personal-work" id="personal">
+            <div class="personal-work__title">
+                <h1 class="section-title">My Personal Projects</h1>
             </div>
-          </div>
-          <div class="card-section card-section__right">
-            <div class="card-section__images">
-              <img src="images/bsb/ByteSizeBlog.png" width="90%" />
-            </div>
-            <div class="card">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/bsb/blogicon.png"
-                  width="125"
-                  alt="Chatnonymous"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/nextjs.png"
-                    width="40"
-                    height="40"
-                    alt="NextJs"
-                  />
-                  <img
-                    src="images/skill-logos/typescript.png"
-                    width="40"
-                    height="40"
-                    alt="TypeScript"
-                  />
-                  <img
-                    src="images/skill-logos/node-js.png"
-                    width="35"
-                    height="40"
-                    alt="NodeJS"
-                  />
-                </div>
-                <h2>Byte Size Blog</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    This is a blog website I created using NextJS framework. My
-                    plans are to continue to update this with posts on my
-                    knowledge and experience within the industry! It uses nextJS
-                    server side rendering to prerender pages and posts and route
-                    apis for contacting me.
-                  </p>
-                  <p>
-                    My plans are to add the ability for people to like posts or
-                    comment on them in the future so it can include more
-                    engagement. feel free to check out my stories!
-                  </p>
-                </div>
-                <div class="card__button">
-                  <button
-                    onclick="navigate('https://bytesizecoderblog.vercel.app/')"
-                    class="button-main"
-                  >
-                    Check it out!
-                  </button>
-                  <button
-                    onclick="navigate('https://github.com/Byte-Size-Coder/byte-size-blog')"
-                    class="button-main"
-                  >
-                    View Repo
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-section card-section__right">
-            <div class="card">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/logo/bsc-logo-icon.png"
-                  width="125"
-                  alt="Capstan Gate"
-                  style="border-radius: 50%"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/ue4.png"
-                    width="40"
-                    height="40"
-                    alt="Unreal Engine 4"
-                  />
-                  <img
-                    src="images/skill-logos/cplusplus.png"
-                    width="40"
-                    height="40"
-                    alt="C++"
-                  />
-                </div>
-                <h2>To The Last Poly</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    This is a personal project I am working on to create a
-                    arcade multiplayer shooter game in a polygon style. This is
-                    to further my skills in Unreal by utilizing their Online
-                    Subsystem with steam. Players will be allowed to join a
-                    match and fight eachother by equipping weapons and items to
-                    use against them.
-                  </p>
-                  <p>
-                    I am currently developing this and all the awesome features
-                    I will come up with so I can share with everyone! All assets
-                    (art, audio, effects, etc) are from the Unreal Marketplace.
-                    Stop by again to see more content and updates on this!
-                  </p>
-                </div>
-                <div class="card__button">
-                  <button
-                    onclick="navigate('https://github.com/Byte-Size-Coder/ToTheLastPoly')"
-                    class="button-main"
-                  >
-                    View Repo
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card-section__images">
-              <img
-                src="images/TTLP/TTLP.gif"
-                width="500"
-                style="border-radius: 30%"
-              />
-            </div>
-          </div>
-          <div class="card-section card-section__right">
-            <div class="card-section__images">
-              <img src="images/chatnonymous/screenshot.png" width="90%" />
-            </div>
-            <div class="card">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/other-logos/chatnonymous.png"
-                  width="125"
-                  alt="Chatnonymous"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/react.png"
-                    width="40"
-                    height="40"
-                    alt="React"
-                  />
-                  <img
-                    src="images/skill-logos/material-ui.png"
-                    width="45"
-                    height="40"
-                    alt="Material-UI"
-                  />
-                  <img
-                    src="images/skill-logos/javascript.png"
-                    width="40"
-                    height="40"
-                    alt="JavaScript"
-                  />
-                  <img
-                    src="images/skill-logos/node-js.png"
-                    width="35"
-                    height="40"
-                    alt="NodeJS"
-                  />
-                </div>
-                <h2>Chatnonymous</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    Chatnonymous is a chat web application that allows users to
-                    communicate anonymously. This was design to create an
-                    environment where people can share their thoughts together
-                    without the concern of identity attached to the
-                    conversation. This allows discussions to happen at the
-                    clearest level so everyone in that environment can
-                    comprehend and understand without judgment.
-                  </p>
-                  <p>
-                    I develop this app after graduating from Fanshawe College.
-                    There is both a client (React) and a server (NodeJS) that
-                    uses WebSocket communication. All information is handled on
-                    the server, meaning no data is stored on any database to
-                    keep all user's identities and conversation private and
-                    within the moment.
-                  </p>
-                </div>
-                <div class="card__button">
-                  <button
-                    onclick="navigate('https://chatnonymous.fly.dev/')"
-                    class="button-main"
-                  >
-                    Try it Out!
-                  </button>
-                  <button
-                    onclick="navigate('https://github.com/Byte-Size-Coder/chatnonymous')"
-                    class="button-main"
-                  >
-                    View Repo
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card-section card-section__right">
-            <div class="card">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/game-jam/INFECTED LOGO.png"
-                  width="200"
-                  alt="Infected"
-                  style="border-radius: 50%"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/unity.png"
-                    width="40"
-                    height="40"
-                    alt="Unity"
-                  />
-                  <img
-                    src="images/skill-logos/csharp.png"
-                    width="40"
-                    height="40"
-                    alt="C#"
-                  />
-                </div>
-                <h2>Global Game Jam 2018</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    This was a small game I made with fellow students at the
-                    Global Game Jam 2018 hosted in Toronto. This is a top down
-                    arcade style shooter where you play a small virus making
-                    your way through the host's blood stream and destroying all
-                    the cells you can find to reach the high scores!
-                  </p>
-                  <p>
-                    My focus on this project was player shooting and enemy
-                    behaviours like the clusterd red blood cells and medication
-                    pills. I also set up the UI to give it a old time arcade
-                    style approach.
-                  </p>
-                </div>
-                <div class="card__button">
-                  <button
-                    onclick="navigate('https://globalgamejam.org/2018/games/infected-0')"
-                    class="button-main"
-                  >
-                    View Game Page
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card-section__images">
-              <iframe
-                width="90%"
-                height="500"
-                src="https://www.youtube.com/embed/ffIAJe6vuXo"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
-          <div class="card-section card-section__right">
-            <div class="card-section__images">
-              <iframe
-                width="90%"
-                height="500"
-                src="https://www.youtube.com/embed/jd_Ziwqyygg?start=5"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <div class="card">
-              <div class="card__content card__head-section">
-                <img
-                  src="images/capstan-gate/capstan-gate.jpg"
-                  width="125"
-                  alt="Capstan Gate"
-                  style="border-radius: 50%"
-                />
-                <div class="project-skills">
-                  <img
-                    src="images/skill-logos/ue4.png"
-                    width="40"
-                    height="40"
-                    alt="Unreal Engine 4"
-                  />
-                  <img
-                    src="images/skill-logos/cplusplus.png"
-                    width="40"
-                    height="40"
-                    alt="C++"
-                  />
-                  <img
-                    src="images/schools/tfs.jpeg"
-                    width="40"
-                    height="40"
-                    style="border-radius: 50%"
-                    alt="Toronto Film School"
-                  />
-                </div>
-                <h2>Capstan Gate</h2>
-              </div>
-              <div class="card__content">
-                <div>
-                  <p>
-                    Capstan Gate is a first person stealth horror game that was
-                    a final student project of ours at Toronto Film School.
-                    Players play as a patient that must escape from the asylum
-                    while their mind begins to loose control with disturbing
-                    visuals and persuasive voices within their head.
-                  </p>
-                  <p>
-                    I was appointed Technical Lead for this project with a team
-                    of 3 programmers. My responsibilities were to lead the team
-                    and create/maintain development expectations. With those
-                    responsiblites, I also developed both the player's main
-                    mechanics and the enemy AI's perception and pathfinding
-                    sequences.
-                  </p>
-                  <p>
-                    One of the highlights of mine in this project was creating a
-                    coordinated takedown mechanic that aligns animations to play
-                    correctly from a first person perspective. I ended up
-                    creating a tutorial video for this mechanic on YouTube that
-                    has gained over 2,000 views.
-                  </p>
-                </div>
-                <div class="card__button">
-                  <button
-                    onclick="navigate('https://github.com/Byte-Size-Coder/CapstanGate')"
-                    class="button-main"
-                  >
-                    View Repo
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="connect" id="connect">
-      <div class="connect__title">
-        <h1 class="section-title no-margin">Let's Connect</h1>
-        <h2>
-          I am available to discuss any potential collaboration on your project!
-        </h2>
-      </div>
 
-      <section class="contact">
-        <form class="form">
-          <div class="controls">
-            <div class="control">
-              <label htmlFor="email">Your Email</label>
-              <input type="email" id="email" required />
-              <span id="error-email" class="error-hidden"></span>
+            <div class="personal-work__content">
+                <div class="cards end-alignment">
+                    <div class="card-section card-section__right">
+                        <div class="card">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/logo/bsc-logo-icon.png"
+                                    width="125"
+                                    alt="Capstan Gate"
+                                    style="border-radius: 50%"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/unity.png"
+                                        width="40"
+                                        height="40"
+                                        alt="Unity"
+                                    />
+                                    <img
+                                        src="images/skill-logos/csharp.png"
+                                        width="40"
+                                        height="40"
+                                        alt="C#"
+                                    />
+                                </div>
+                                <h2>Western VR Shooter</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        I love the western theme! So I decided
+                                        to use my Oculus to start developing
+                                        some VR games! This is the first mini
+                                        game in a mixture of western shooter
+                                        theme. You have two revolvers and must
+                                        shoot as many flying barrels as
+                                        possible.
+                                    </p>
+                                    <p>
+                                        This uses Unity Open XR and XR
+                                        interaction toolkit to establish the
+                                        base mechanics, I added the gunplay
+                                        ability for shooting and reloading.
+                                        Plans are to add other mini games like a
+                                        western standoff mini game and other
+                                        ideas!
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        onclick="navigate('https://github.com/Byte-Size-Coder/ShooterVR')"
+                                        class="button-main"
+                                    >
+                                        View Repo
+                                    </button>
+                                    <button
+                                        onclick="navigate('https://youtu.be/kp7RYeqSWp0?si=myVwBVTd75LJ57QU')"
+                                        class="button-main"
+                                    >
+                                        View Full Demo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-section__images">
+                            <img
+                                src="images/westernVR/WesternVRShooterDemo.gif"
+                                width="500"
+                                style="border-radius: 15%"
+                            />
+                        </div>
+                    </div>
+                    <div class="card-section card-section__right">
+                        <div class="card-section__images">
+                            <img
+                                src="images/bsb/ByteSizeBlog.png"
+                                width="90%"
+                            />
+                        </div>
+                        <div class="card">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/bsb/blogicon.png"
+                                    width="125"
+                                    alt="Chatnonymous"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/nextjs.png"
+                                        width="40"
+                                        height="40"
+                                        alt="NextJs"
+                                    />
+                                    <img
+                                        src="images/skill-logos/typescript.png"
+                                        width="40"
+                                        height="40"
+                                        alt="TypeScript"
+                                    />
+                                    <img
+                                        src="images/skill-logos/node-js.png"
+                                        width="35"
+                                        height="40"
+                                        alt="NodeJS"
+                                    />
+                                </div>
+                                <h2>Byte Size Blog</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        This is a blog website I created using
+                                        NextJS framework. My plans are to
+                                        continue to update this with posts on my
+                                        knowledge and experience within the
+                                        industry! It uses nextJS server side
+                                        rendering to prerender pages and posts
+                                        and route apis for contacting me.
+                                    </p>
+                                    <p>
+                                        My plans are to add the ability for
+                                        people to like posts or comment on them
+                                        in the future so it can include more
+                                        engagement. feel free to check out my
+                                        stories!
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        onclick="navigate('https://bytesizecoderblog.vercel.app/')"
+                                        class="button-main"
+                                    >
+                                        Check it out!
+                                    </button>
+                                    <button
+                                        onclick="navigate('https://github.com/Byte-Size-Coder/byte-size-blog')"
+                                        class="button-main"
+                                    >
+                                        View Repo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-section card-section__right">
+                        <div class="card">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/logo/bsc-logo-icon.png"
+                                    width="125"
+                                    alt="Capstan Gate"
+                                    style="border-radius: 50%"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/ue4.png"
+                                        width="40"
+                                        height="40"
+                                        alt="Unreal Engine 4"
+                                    />
+                                    <img
+                                        src="images/skill-logos/cplusplus.png"
+                                        width="40"
+                                        height="40"
+                                        alt="C++"
+                                    />
+                                </div>
+                                <h2>To The Last Poly</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        This is a personal project I am working
+                                        on to create a arcade multiplayer
+                                        shooter game in a polygon style. This is
+                                        to further my skills in Unreal by
+                                        utilizing their Online Subsystem with
+                                        steam. Players will be allowed to join a
+                                        match and fight eachother by equipping
+                                        weapons and items to use against them.
+                                    </p>
+                                    <p>
+                                        I am currently developing this and all
+                                        the awesome features I will come up with
+                                        so I can share with everyone! All assets
+                                        (art, audio, effects, etc) are from the
+                                        Unreal Marketplace. Stop by again to see
+                                        more content and updates on this!
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        onclick="navigate('https://github.com/Byte-Size-Coder/ToTheLastPoly')"
+                                        class="button-main"
+                                    >
+                                        View Repo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-section__images">
+                            <img
+                                src="images/TTLP/TTLP.gif"
+                                width="500"
+                                style="border-radius: 30%"
+                            />
+                        </div>
+                    </div>
+                    <div class="card-section card-section__right">
+                        <div class="card-section__images">
+                            <img
+                                src="images/chatnonymous/screenshot.png"
+                                width="90%"
+                            />
+                        </div>
+                        <div class="card">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/other-logos/chatnonymous.png"
+                                    width="125"
+                                    alt="Chatnonymous"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/react.png"
+                                        width="40"
+                                        height="40"
+                                        alt="React"
+                                    />
+                                    <img
+                                        src="images/skill-logos/material-ui.png"
+                                        width="45"
+                                        height="40"
+                                        alt="Material-UI"
+                                    />
+                                    <img
+                                        src="images/skill-logos/javascript.png"
+                                        width="40"
+                                        height="40"
+                                        alt="JavaScript"
+                                    />
+                                    <img
+                                        src="images/skill-logos/node-js.png"
+                                        width="35"
+                                        height="40"
+                                        alt="NodeJS"
+                                    />
+                                </div>
+                                <h2>Chatnonymous</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        Chatnonymous is a chat web application
+                                        that allows users to communicate
+                                        anonymously. This was design to create
+                                        an environment where people can share
+                                        their thoughts together without the
+                                        concern of identity attached to the
+                                        conversation. This allows discussions to
+                                        happen at the clearest level so everyone
+                                        in that environment can comprehend and
+                                        understand without judgment.
+                                    </p>
+                                    <p>
+                                        I develop this app after graduating from
+                                        Fanshawe College. There is both a client
+                                        (React) and a server (NodeJS) that uses
+                                        WebSocket communication. All information
+                                        is handled on the server, meaning no
+                                        data is stored on any database to keep
+                                        all user's identities and conversation
+                                        private and within the moment.
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        onclick="navigate('https://chatnonymous.fly.dev/')"
+                                        class="button-main"
+                                    >
+                                        Try it Out!
+                                    </button>
+                                    <button
+                                        onclick="navigate('https://github.com/Byte-Size-Coder/chatnonymous')"
+                                        class="button-main"
+                                    >
+                                        View Repo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-section card-section__right">
+                        <div class="card">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/game-jam/INFECTED LOGO.png"
+                                    width="200"
+                                    alt="Infected"
+                                    style="border-radius: 50%"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/unity.png"
+                                        width="40"
+                                        height="40"
+                                        alt="Unity"
+                                    />
+                                    <img
+                                        src="images/skill-logos/csharp.png"
+                                        width="40"
+                                        height="40"
+                                        alt="C#"
+                                    />
+                                </div>
+                                <h2>Global Game Jam 2018</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        This was a small game I made with fellow
+                                        students at the Global Game Jam 2018
+                                        hosted in Toronto. This is a top down
+                                        arcade style shooter where you play a
+                                        small virus making your way through the
+                                        host's blood stream and destroying all
+                                        the cells you can find to reach the high
+                                        scores!
+                                    </p>
+                                    <p>
+                                        My focus on this project was player
+                                        shooting and enemy behaviours like the
+                                        clusterd red blood cells and medication
+                                        pills. I also set up the UI to give it a
+                                        old time arcade style approach.
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        onclick="navigate('https://globalgamejam.org/2018/games/infected-0')"
+                                        class="button-main"
+                                    >
+                                        View Game Page
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-section__images">
+                            <iframe
+                                width="90%"
+                                height="500"
+                                src="https://www.youtube.com/embed/ffIAJe6vuXo"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                    <div class="card-section card-section__right">
+                        <div class="card-section__images">
+                            <iframe
+                                width="90%"
+                                height="500"
+                                src="https://www.youtube.com/embed/jd_Ziwqyygg?start=5"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <div class="card">
+                            <div class="card__content card__head-section">
+                                <img
+                                    src="images/capstan-gate/capstan-gate.jpg"
+                                    width="125"
+                                    alt="Capstan Gate"
+                                    style="border-radius: 50%"
+                                />
+                                <div class="project-skills">
+                                    <img
+                                        src="images/skill-logos/ue4.png"
+                                        width="40"
+                                        height="40"
+                                        alt="Unreal Engine 4"
+                                    />
+                                    <img
+                                        src="images/skill-logos/cplusplus.png"
+                                        width="40"
+                                        height="40"
+                                        alt="C++"
+                                    />
+                                    <img
+                                        src="images/schools/tfs.jpeg"
+                                        width="40"
+                                        height="40"
+                                        style="border-radius: 50%"
+                                        alt="Toronto Film School"
+                                    />
+                                </div>
+                                <h2>Capstan Gate</h2>
+                            </div>
+                            <div class="card__content">
+                                <div>
+                                    <p>
+                                        Capstan Gate is a first person stealth
+                                        horror game that was a final student
+                                        project of ours at Toronto Film School.
+                                        Players play as a patient that must
+                                        escape from the asylum while their mind
+                                        begins to loose control with disturbing
+                                        visuals and persuasive voices within
+                                        their head.
+                                    </p>
+                                    <p>
+                                        I was appointed Technical Lead for this
+                                        project with a team of 3 programmers. My
+                                        responsibilities were to lead the team
+                                        and create/maintain development
+                                        expectations. With those responsiblites,
+                                        I also developed both the player's main
+                                        mechanics and the enemy AI's perception
+                                        and pathfinding sequences.
+                                    </p>
+                                    <p>
+                                        One of the highlights of mine in this
+                                        project was creating a coordinated
+                                        takedown mechanic that aligns animations
+                                        to play correctly from a first person
+                                        perspective. I ended up creating a
+                                        tutorial video for this mechanic on
+                                        YouTube that has gained over 2,000
+                                        views.
+                                    </p>
+                                </div>
+                                <div class="card__button">
+                                    <button
+                                        onclick="navigate('https://github.com/Byte-Size-Coder/CapstanGate')"
+                                        class="button-main"
+                                    >
+                                        View Repo
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="control">
-              <label htmlFor="name">Your Name</label>
-              <input type="text" id="name" required />
-              <span id="error-name" class="error-hidden"></span>
+        </section>
+        <section class="connect" id="connect">
+            <div class="connect__title">
+                <h1 class="section-title no-margin">Let's Connect</h1>
+                <h2>
+                    I am available to discuss any potential collaboration on
+                    your project!
+                </h2>
             </div>
-          </div>
-          <div class="control">
-            <label htmlFor="message">Your Message</label>
-            <textarea rows="5" id="message" required></textarea>
-            <span id="error-message" class="error-hidden"></span>
-          </div>
-          <div class="actions">
-            <span class="contact__success-hidden" id="message-success"
-              >Message successfully sent!</span
-            >
-            <button id="submit-button" class="button-main">Send Message</button>
-          </div>
-        </form>
-      </section>
-      <div class="socials">
-        <!-- <div class="social">
+
+            <section class="contact">
+                <form class="form">
+                    <div class="controls">
+                        <div class="control">
+                            <label htmlFor="email">Your Email</label>
+                            <input type="email" id="email" required />
+                            <span id="error-email" class="error-hidden"></span>
+                        </div>
+                        <div class="control">
+                            <label htmlFor="name">Your Name</label>
+                            <input type="text" id="name" required />
+                            <span id="error-name" class="error-hidden"></span>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <label htmlFor="message">Your Message</label>
+                        <textarea rows="5" id="message" required></textarea>
+                        <span id="error-message" class="error-hidden"></span>
+                    </div>
+                    <div class="actions">
+                        <span
+                            class="contact__success-hidden"
+                            id="message-success"
+                            >Message successfully sent!</span
+                        >
+                        <button id="submit-button" class="button-main">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <div class="socials">
+                <!-- <div class="social">
 					<a href="mailto:matthew@bytesizecoder.ca"
 						><img src="images/socials/email-red.png" alt="Email"
 					/></a>
 				</div> -->
-        <div
-          onclick="navigate('https://www.linkedin.com/in/matthewwalterdouglas/')"
-          class="social"
-        >
-          <img src="images/socials/linkedin-logo.png" alt="LinkedIn" />
-        </div>
-        <div
-          onclick="navigate('https://github.com/Byte-Size-Coder')"
-          class="social"
-        >
-          <img src="images/socials/github.png" alt="Github" />
-        </div>
-      </div>
-    </section>
-    <footer>
-      <p>&copy; 2022 bytesizecoder.ca</p>
-      <p>All Rights Reserved</p>
-    </footer>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("h4uAprv3pJZbF0LzP");
-      })();
-    </script>
-    <script src="main.js"></script>
-  </body>
+                <div
+                    onclick="navigate('https://www.linkedin.com/in/matthewwalterdouglas/')"
+                    class="social"
+                >
+                    <img
+                        src="images/socials/linkedin-logo.png"
+                        alt="LinkedIn"
+                    />
+                </div>
+                <div
+                    onclick="navigate('https://github.com/Byte-Size-Coder')"
+                    class="social"
+                >
+                    <img src="images/socials/github.png" alt="Github" />
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2022 bytesizecoder.ca</p>
+            <p>All Rights Reserved</p>
+        </footer>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("h4uAprv3pJZbF0LzP");
+            })();
+        </script>
+        <script src="main.js"></script>
+    </body>
 </html>
