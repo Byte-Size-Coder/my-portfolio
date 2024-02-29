@@ -1,33 +1,33 @@
 const timelineInfo = [
     {
-        date: "April 2016",
+        date: "April 2015",
         content:
-            "Worked as a Tutor during my time at Toronto Film school to teach previous term students programing (peer-to-peer and group sessions)",
+            "Attended Toronto Film School and became a tutor for first term programming students (peer-to-peer and group sessions)",
     },
     {
-        date: "September 2017",
+        date: "September 2016",
         content:
-            "Worked as a Tutor during my time at Toronto Film school to teach previous term students programing (peer-to-peer and group sessions)",
+            "Took our main game mechanic from game and posted tutorial video online to implement it.",
     },
     {
         date: "September 2018",
         content:
-            "Worked as a Tutor during my time at Toronto Film school to teach previous term students programing (peer-to-peer and group sessions)",
+            "Continue my tutoring at Fanshawe College to help new students with coding fundamentals in the CPA program",
     },
     {
-        date: "December 2023",
+        date: "August 2021",
         content:
-            "Worked as a Tutor during my time at Toronto Film school to teach previous term students programing (peer-to-peer and group sessions)",
+            "Mentored two interns at web development contract while building application",
     },
     {
         date: "January 2024",
         content:
-            "Worked as a Tutor during my time at Toronto Film school to teach previous term students programing (peer-to-peer and group sessions)",
+            "Part-Time teaching at Fanshawe College for the Game Development Program (GDP). Currently teaching Game Component Integration",
     },
     {
         date: "Future",
         content:
-            "Worked as a Tutor during my time at Toronto Film school to teach previous term students programing (peer-to-peer and group sessions)",
+            "Looking to continue my teaching career at Fanshawe with more courses and assist my fellow students and friends as they transition into the industry",
     },
 ];
 
