@@ -31,14 +31,14 @@
                 <a class="nav__link" href="#about-me" onclick="toggleNav()"
                     >About Me</a
                 >
-                <a class="nav__link" href="#skills" onclick="toggleNav()"
-                    >Skills</a
+                <a class="nav__link" href="#developer" onclick="toggleNav()"
+                    >Developer</a
                 >
-                <a class="nav__link" href="#professional" onclick="toggleNav()"
-                    >Professional Work</a
+                <a class="nav__link" href="#scrum-master" onclick="toggleNav()"
+                    >Scrum Master</a
                 >
-                <a class="nav__link" href="#personal" onclick="toggleNav()"
-                    >Personal Projects</a
+                <a class="nav__link" href="#educator" onclick="toggleNav()"
+                    >Educator</a
                 >
                 <a class="nav__link" href="#connect" onclick="toggleNav()"
                     >Connect</a
@@ -95,7 +95,7 @@
                 <div class="schools">
                     <div class="school">
                         <img
-                            class="tfs-img"
+                            id="tfs-img"
                             src="images/schools/tfs.jpeg"
                             alt="Toronto Film School"
                             height="100"
@@ -122,7 +122,74 @@
                 </div>
             </div>
         </section>
-        <section class="certifications" id="certifications">
+        <section id="developer">
+            <div class="career-container">
+                <div class="career-container__piece">
+                    <h1 class="career-container__title">Developer</h1>
+                    <p class="career-container__content">
+                        I thrive in both team settings and individual projects,
+                        leveraging my strong collaboration skills and
+                        self-motivation to deliver quality web and game
+                        applications. My adaptability allows me to contribute
+                        effectively to team dynamics or drive projects to
+                        completion independently, always with a focus on
+                        excellence and innovation.
+                    </p>
+                </div>
+                <div class="career-container__piece">
+                    <div class="slider">
+                        <!-- slide 1 -->
+
+                        <!-- Control buttons -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="scrum-master">
+            <div class="career-container">
+                <div class="career-container__piece">
+                    <div id="scrum-content">
+                        <img src="images/certs/jira.png" width="500" />
+                        <div>
+                            <canvas id="scrumChart"></canvas>
+                        </div>
+
+                        <img src="images/certs/PSM-Logo.png" />
+                    </div>
+                </div>
+                <div class="career-container__piece">
+                    <h1 class="career-container__title">Scrum Master</h1>
+                    <p class="career-container__content">
+                        I leverage agile methodologies to lead teams
+                        effectively, ensuring smooth project progression and
+                        fostering a collaborative environment. My strong
+                        communication skills and problem-solving abilities
+                        enable me to resolve conflicts and remove obstacles,
+                        driving continuous improvement and team success.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="educator">
+            <div class="career-container">
+                <div class="career-container__piece">
+                    <h1 class="career-container__title">Educator</h1>
+                    <p class="career-container__content">
+                        From student to teacher, my deep passion for the
+                        industry fuels my drive to share knowledge and inspire
+                        others. With a strong grasp of subject matter and a
+                        practical approach, I excel at breaking down complex
+                        concepts, fostering curiosity, and nurturing a love for
+                        learning, reflecting my own path of growth and
+                        discovery.
+                    </p>
+                </div>
+                <div class="career-container__piece" id="educator-content">
+                    <div class="timeline"></div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="certifications" id="certifications">
             <div class="skills-heading">
                 <h1 class="section-title no-margin">Certifications</h1>
             </div>
@@ -1615,6 +1682,7 @@
                 </div>
             </div>
         </section>
+                  -->
         <section class="connect" id="connect">
             <div class="connect__title">
                 <h1 class="section-title no-margin">Let's Connect</h1>
@@ -1655,12 +1723,13 @@
                     </div>
                 </form>
             </section>
+
             <div class="socials">
                 <!-- <div class="social">
 					<a href="mailto:matthew@bytesizecoder.ca"
 						><img src="images/socials/email-red.png" alt="Email"
 					/></a>
-				</div> -->
+				</div>  -->
                 <div
                     onclick="navigate('https://www.linkedin.com/in/matthewwalterdouglas/')"
                     class="social"
@@ -1678,6 +1747,7 @@
                 </div>
             </div>
         </section>
+
         <footer>
             <p>&copy; 2022 bytesizecoder.ca</p>
             <p>All Rights Reserved</p>
@@ -1691,6 +1761,37 @@
                 emailjs.init("h4uAprv3pJZbF0LzP");
             })();
         </script>
-        <script src="main.js"></script>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-header">
+                    <img
+                        class="modal-header__image"
+                        src="path_to_image.jpg"
+                        alt="Modal Image"
+                    />
+                    <h2 class="modal-header__title">Modal Title</h2>
+                    <div class="modal-header__skills"></div>
+                </div>
+                <div class="modal-feature"></div>
+                <div class="modal-description">
+                    <p>
+                        This is a modal description. Here you can add more
+                        details about the content or purpose of the modal.
+                    </p>
+                </div>
+                <div class="modal-actions">
+                    <button class="button-main">Cancel</button>
+                    <button class="button-main">Confirm</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/main.js"></script>
+        <script src="scripts/timeline.js"></script>
+        <script src="scripts/projects.js"></script>
     </body>
 </html>
+<!-- </body>
+</html> -->
