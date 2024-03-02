@@ -11,25 +11,29 @@ function addProjectSlide(project) {
     slideImage.src = project.imgSrc;
     slideImage.alt = project.name;
 
-    const slideOverlay = document.createElement("div");
-    slideOverlay.className = "slide__overlay";
+    if (!window.mobileAndTabletCheck()) {
+        const slideOverlay = document.createElement("div");
+        slideOverlay.className = "slide__overlay";
 
-    const sliderOverlayTitle = document.createElement("h2");
-    sliderOverlayTitle.innerHTML = project.name;
+        const sliderOverlayTitle = document.createElement("h2");
+        sliderOverlayTitle.innerHTML = project.name;
 
-    const sliderOverlayMoreInfo = document.createElement("button");
-    sliderOverlayMoreInfo.className = "button-main overlay-info";
-    sliderOverlayMoreInfo.innerHTML = "Click for more info";
+        const sliderOverlayMoreInfo = document.createElement("button");
+        sliderOverlayMoreInfo.className = "button-main overlay-info";
+        sliderOverlayMoreInfo.innerHTML = "Click for more info";
 
-    sliderOverlayMoreInfo.addEventListener("click", () => {
-        OpenProjectModal(project);
-    });
+        sliderOverlayMoreInfo.addEventListener("click", () => {
+            OpenProjectModal(project);
+        });
 
-    slideOverlay.appendChild(sliderOverlayTitle);
-    slideOverlay.appendChild(sliderOverlayMoreInfo);
+        slideOverlay.appendChild(sliderOverlayTitle);
+        slideOverlay.appendChild(sliderOverlayMoreInfo);
 
-    slide.appendChild(slideImage);
-    slide.appendChild(slideOverlay);
+        slide.appendChild(slideImage);
+        slide.appendChild(slideOverlay);
+    } else {
+        slide.appendChild(slideImage);
+    }
 
     slider.appendChild(slide);
 }
@@ -162,6 +166,16 @@ window.onclick = function (event) {
         modal.style.display = "none";
     }
 };
+
+if (window.mobileAndTabletCheck()) {
+    const buttonView = document.querySelector(".btn-view");
+
+    buttonView.hidden = false;
+
+    buttonView.addEventListener("click", function () {
+        OpenProjectModal(projectInfo[curSlide]);
+    });
+}
 
 function OpenProjectModal(project) {
     modalTitle.innerHTML = project.name;
