@@ -13,20 +13,15 @@ const projectInfo = [
         attempts to avoid horrific monsters in
         enchanted woods while trying to find a
         way to escape her mundane life.`,
-            `This game is developed by AstralShift
-        and published by Square Enix Collective.
-        It is currently avaialble for PC, PS5,
-        XBOX, and Nintendo Switch. I was part of
-        a vendor (Joydrop) that assisted with
-        development in porting to consoles.`,
-            `I worked primariy with porting to Xbox
-        console. I helped with various console
-        specific issues and UI programming to
-        make sure it adapts to the controller
-        scheme. I was also apart of the team to
-        address and fix bugs from live testing
-        to make sure we met the release
-        deadline.`,
+            `This game is developed by AstralShift and published by Square Enix Collective. 
+        It is currently available for PC, PS5, XBOX, and Nintendo Switch. 
+        I was part of a vendor (Joydrop) that assisted with development 
+        in porting to consoles.`,
+            `I worked primarily with porting to the Xbox console. 
+            I helped with various console specific issues and UI programming 
+            to make sure it adapts to the controller scheme. 
+            I was also a part of the team to address and fix bugs from live 
+            testing to make sure we met the release deadline.`,
         ],
         actionButtons: [
             {
@@ -41,27 +36,18 @@ const projectInfo = [
         modalImgSrc: "images/cover-me/cover-me-logo.png",
         skills: ["react", "typescript", "material-ui", "firebase"],
         descriptionParagaphs: [
-            `Cover Me Pro is a work scheduling web
-            application that allows managers to
-            effectively schedule their staff's
-            shifts. This also alows employees to
-            view and manager thier own shifts. They
-            are able to trade with eachother, or
-            request vacation/sick leave. This
-            application also handle overtime
-            callouts by utiling text notifcations to
-            all eligible employees.`,
-            `I was hired for designing all user
-            flow/features. These are developed using
-            React, TypeScript, and Material UI. All
-            server side logic utlize firebase cloud
-            functions that handles authentication,
-            database, and file storage.`,
-            `I am now also mentoring another developer 
-            on this project to help with various task and 
-            teach them along the way. It has been a great experience 
-            for them and myself to be able to provide my knoweldge and 
-            experience as they begin their career.`,
+            `Cover Me Pro is a work scheduling web application that allows 
+            managers to effectively schedule their staff's shifts. This 
+            also allows employees to view and manage their own shifts. 
+            They are able to trade with each other, or request vacation/sick leave. 
+            This application also handles overtime callouts by utilizing text 
+            notifications to all eligible employees.`,
+            `I was hired for designing all user flow/features. These are developed using React, 
+            TypeScript, and Material UI. All server side logic utilizes firebase cloud functions 
+            that handles authentication, database, and file storage.`,
+            `I am now also mentoring another developer on this project to help with various tasks 
+            and teach them along the way. It has been a great experience for them and myself to 
+            be able to provide my knowledge and experience as they begin their career.`,
         ],
         actionButtons: [
             {
@@ -76,26 +62,14 @@ const projectInfo = [
         modalImgSrc: "images/pot/pot-logo.png",
         skills: ["cplusplus", "ue4"],
         descriptionParagaphs: [
-            `Path of Titans is a MMO Survival game
-            where you play as Dinosaurs in
-            prehistoric times. Complete quest,
-            challenge other players, and grow your
-            dino from a youngling to a roaring
-            adult!`,
-            `This game is being develop by Alderon
-            Games in Unreal Engine 5. I was part of
-            a third party team (Joydrop) who joined
-            in to assist them in creating major
-            updates to the game. These updates
-            included new flying and swimming
-            dinosaurs, brand new combat and
-            abilites, and more quest updates.`,
-            `My noteable work was expanding on their
-            combat system to implement Area of
-            Effect attacks and other additional
-            abilites. I also assisted in some
-            optimization issues and a handful of
-            bugs.`,
+            `Path of Titans is a MMO Survival game where you play as Dinosaurs in prehistoric times. 
+            Complete the quest, challenge other players, and grow your dino from a youngling to a roaring adult!`,
+            `This game is being developed by Alderon Games in Unreal Engine 5. 
+            I was part of a third party team (Joydrop) who joined in to assist them in 
+            creating major updates to the game. These updates included new flying and 
+            swimming dinosaurs, brand new combat and abilities, and more quest updates.`,
+            `My noteable work was expanding on their combat system to implement Area of 
+            Effect attacks and other additional abilities. I also assisted in some optimization issues and a handful of bugs.`,
         ],
         actionButtons: [
             {
@@ -142,7 +116,7 @@ const projectInfo = [
         descriptionParagaphs: [
             `Chatnonymous is a chat web application
             that allows users to communicate
-            anonymously. This was design to create
+            anonymously. This was designed to create
             an environment where people can share
             their thoughts together without the
             concern of identity attached to the
@@ -150,7 +124,7 @@ const projectInfo = [
             happen at the clearest level so everyone
             in that environment can comprehend and
             understand without judgment.`,
-            `I develop this app after graduating from
+            `I developed this app after graduating from
             Fanshawe College. There is both a client
             (React) and a server (NodeJS) that uses
             WebSocket communication. All information
@@ -180,7 +154,7 @@ const projectInfo = [
             to use my Oculus to start developing
             some VR games! This is the first mini
             game in a mixture of western shooter
-            theme. You have two revolvers and must
+            themes. You have two revolvers and must
             shoot as many flying barrels as
             possible.`,
             `This uses Unity Open XR and XR

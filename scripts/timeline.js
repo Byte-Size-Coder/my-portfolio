@@ -25,9 +25,14 @@ const timelineInfo = [
             "Part-Time teaching at Fanshawe College for the Game Development Program (GDP). Currently teaching Game Component Integration",
     },
     {
+        date: "May 2024",
+        content:
+            "Expand my teaching role at Fanshawe, also teaching in the Computer Programer Analyst (CPA) and Computer System Technician (CTN) Programs",
+    },
+    {
         date: "Future",
         content:
-            "Looking to continue my teaching career at Fanshawe with more courses and assist my fellow students and friends as they transition into the industry",
+            "Continuing to help others get into the industry through education and sharing my experiences",
     },
 ];
 
