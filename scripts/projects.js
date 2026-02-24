@@ -1,11 +1,24 @@
+function shuffleProjects(items) {
+  const shuffled = [...items];
+
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const randomIndex = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[randomIndex]] = [shuffled[randomIndex], shuffled[i]];
+  }
+
+  return shuffled;
+}
+
 function setupSlider(containerId, projects) {
   const slider = document.getElementById(containerId);
-  if (!slider) return;
+  if (!slider || !projects || projects.length === 0) return;
+
+  const randomizedProjects = shuffleProjects(projects);
 
   const slides = [];
 
   // Create slide elements
-  projects.forEach((project, index) => {
+  randomizedProjects.forEach((project, index) => {
     const slide = document.createElement("div");
     slide.className = "slide";
     slide.style.transform = `translateX(${index * 100}%)`;
@@ -51,7 +64,7 @@ function setupSlider(containerId, projects) {
   slider.appendChild(btnNext);
   slider.appendChild(btnPrev);
 
-  let curSlide = 0;
+  let curSlide = Math.floor(Math.random() * slides.length);
   const maxSlide = slides.length - 1;
 
   const updateSlides = () => {
@@ -60,23 +73,54 @@ function setupSlider(containerId, projects) {
     });
   };
 
-  btnNext.onclick = () => {
+  const goNext = () => {
     curSlide = curSlide === maxSlide ? 0 : curSlide + 1;
     updateSlides();
-    stopAuto();
+  };
+
+  const goPrev = () => {
+    curSlide = curSlide === 0 ? maxSlide : curSlide - 1;
+    updateSlides();
+  };
+
+  btnNext.onclick = () => {
+    goNext();
+    resetAutoPlay();
   };
 
   btnPrev.onclick = () => {
-    curSlide = curSlide === 0 ? maxSlide : curSlide - 1;
-    updateSlides();
-    stopAuto();
+    goPrev();
+    resetAutoPlay();
   };
 
-  let autoSlide = setInterval(() => {
-    btnNext.click();
-  }, 5000);
+  let autoPlayTimeout = null;
 
-  const stopAuto = () => clearInterval(autoSlide);
+  const scheduleNextAutoPlay = () => {
+    const nextDelay = 4000 + Math.floor(Math.random() * 3000);
+
+    autoPlayTimeout = window.setTimeout(() => {
+      const shouldAdvance = Math.random() >= 0.3;
+      if (shouldAdvance) {
+        goNext();
+      } else {
+        goPrev();
+      }
+
+      scheduleNextAutoPlay();
+    }, nextDelay);
+  };
+
+  const stopAutoPlay = () => {
+    if (autoPlayTimeout !== null) {
+      window.clearTimeout(autoPlayTimeout);
+      autoPlayTimeout = null;
+    }
+  };
+
+  const resetAutoPlay = () => {
+    stopAutoPlay();
+    scheduleNextAutoPlay();
+  };
 
   // --- TOUCH SUPPORT ---
   let isDragging = false;
@@ -85,7 +129,7 @@ function setupSlider(containerId, projects) {
   const onTouchStart = (e) => {
     isDragging = true;
     startX = e.touches[0].clientX;
-    stopAuto();
+    stopAutoPlay();
   };
 
   const onTouchMove = (e) => {
@@ -104,6 +148,7 @@ function setupSlider(containerId, projects) {
 
   const onTouchEnd = () => {
     isDragging = false;
+    resetAutoPlay();
   };
 
   slides.forEach((slide) => {
@@ -113,31 +158,38 @@ function setupSlider(containerId, projects) {
     slide.addEventListener("touchcancel", onTouchEnd);
   });
 
-  updateSlides(); // initial layout
+  updateSlides();
+  scheduleNextAutoPlay();
 }
 
 // Modal References
 let modal = document.getElementById("myModal");
-let modalTitle = modal.querySelector(".modal-header__title");
-let modalImage = modal.querySelector(".modal-header__image");
-let modalSkills = modal.querySelector(".modal-header__skills");
-let modalDescription = modal.querySelector(".modal-description");
-let modalActions = modal.querySelector(".modal-actions");
-let modalFeature = modal.querySelector(".modal-feature");
-let span = modal.getElementsByClassName("close")[0];
+let modalTitle = modal ? modal.querySelector(".modal-header__title") : null;
+let modalImage = modal ? modal.querySelector(".modal-header__image") : null;
+let modalSkills = modal ? modal.querySelector(".modal-header__skills") : null;
+let modalDescription = modal ? modal.querySelector(".modal-description") : null;
+let modalActions = modal ? modal.querySelector(".modal-actions") : null;
+let modalFeature = modal ? modal.querySelector(".modal-feature") : null;
+let span = modal ? modal.getElementsByClassName("close")[0] : null;
 
-span.onclick = function () {
-  modal.style.display = "none";
-};
+if (span) {
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
-  if (event.target == modal) {
+  if (modal && event.target == modal) {
     modal.style.display = "none";
   }
 };
 
 function OpenProjectModal(project) {
+  if (!modal || !modalTitle || !modalSkills || !modalDescription || !modalActions || !modalFeature) {
+    return;
+  }
+
   modalTitle.innerHTML = project.name;
 
   if (project.modalImgSrc !== undefined) {
@@ -162,7 +214,7 @@ function OpenProjectModal(project) {
 
   modalSkills.innerHTML = "";
 
-  for (skill of project.skills) {
+  for (const skill of project.skills) {
     const skillIconImage = document.createElement("img");
     skillIconImage.src = "images/skill-logos/" + skill + ".png";
     skillIconImage.alt = skill;
@@ -173,7 +225,7 @@ function OpenProjectModal(project) {
 
   modalDescription.innerHTML = "";
 
-  for (paragraph of project.descriptionParagaphs) {
+  for (const paragraph of project.descriptionParagaphs) {
     const p = document.createElement("p");
     p.innerHTML = paragraph;
 
@@ -182,7 +234,7 @@ function OpenProjectModal(project) {
 
   modalActions.innerHTML = "";
 
-  for (actionButton of project.actionButtons) {
+  for (const actionButton of project.actionButtons) {
     const actionBtn = document.createElement("button");
     actionBtn.className = "button-main";
     actionBtn.innerHTML = actionButton.text;

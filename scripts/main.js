@@ -6,8 +6,6 @@ var isNavClosed = true;
 
 function toggleNav() {
     var links = document.querySelector(".nav__links");
-    console.log(links);
-    console.log(isNavClosed);
     if (links) {
         if (isNavClosed) {
             links.classList.remove("close-links");
@@ -35,7 +33,10 @@ const observer = new IntersectionObserver((enteries) => {
     });
 });
 
-observer.observe(document.querySelector("#about-me-title"));
+const aboutMeTitle = document.querySelector("#about-me-title");
+if (aboutMeTitle) {
+    observer.observe(aboutMeTitle);
+}
 
 var sprints = [
     "Day 1",
@@ -50,59 +51,61 @@ var sprints = [
     "Day 10",
 ];
 
-var scrumChart = new Chart("scrumChart", {
-    type: "line",
-    data: {
-        labels: sprints,
-        datasets: [
-            {
-                backgroundColor: "grey",
-                borderColor: "grey",
-                data: [45, 40, 35, 30, 25, 20, 15, 10, 5, 0],
-                fill: "none",
-                lineTension: 0,
-            },
-            {
-                backgroundColor: "#fe5f55",
-                borderColor: "#fe5f55",
-                data: [45, 42, 33, 33, 22, 18, 18, 12, 8, 4],
-                fill: "none",
-                lineTension: 0,
-            },
-            {
-                backgroundColor: "#fe5f55",
-                borderColor: "#fe5f55",
-                data: [40, 38, 32, 27, 20, 13, 9, 8, 5, 3],
-                fill: "none",
-                lineTension: 0,
-                type: "bar",
-            },
-        ],
-    },
-    options: {
-        scales: {
-            xAxes: [
+if (document.getElementById("scrumChart")) {
+    var scrumChart = new Chart("scrumChart", {
+        type: "line",
+        data: {
+            labels: sprints,
+            datasets: [
                 {
-                    gridLines: {
-                        display: false,
-                    },
-                    display: false,
+                    backgroundColor: "grey",
+                    borderColor: "grey",
+                    data: [45, 40, 35, 30, 25, 20, 15, 10, 5, 0],
+                    fill: "none",
+                    lineTension: 0,
                 },
-            ],
-            yAxes: [
                 {
-                    gridLines: {
-                        display: false,
-                    },
-                    display: false,
+                    backgroundColor: "#fe5f55",
+                    borderColor: "#fe5f55",
+                    data: [45, 42, 33, 33, 22, 18, 18, 12, 8, 4],
+                    fill: "none",
+                    lineTension: 0,
+                },
+                {
+                    backgroundColor: "#fe5f55",
+                    borderColor: "#fe5f55",
+                    data: [40, 38, 32, 27, 20, 13, 9, 8, 5, 3],
+                    fill: "none",
+                    lineTension: 0,
+                    type: "bar",
                 },
             ],
         },
-        legend: {
-            display: false,
+        options: {
+            scales: {
+                xAxes: [
+                    {
+                        gridLines: {
+                            display: false,
+                        },
+                        display: false,
+                    },
+                ],
+                yAxes: [
+                    {
+                        gridLines: {
+                            display: false,
+                        },
+                        display: false,
+                    },
+                ],
+            },
+            legend: {
+                display: false,
+            },
         },
-    },
-});
+    });
+}
 
 function handleSubmit(event) {
     event.preventDefault();
@@ -193,9 +196,10 @@ function handleSubmit(event) {
     // send logic
 }
 
-document
-    .getElementById("submit-button")
-    .addEventListener("click", handleSubmit);
+const submitButton = document.getElementById("submit-button");
+if (submitButton) {
+    submitButton.addEventListener("click", handleSubmit);
+}
 
 window.mobileAndTabletCheck = function () {
     let check = false;
