@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/images/logo/bsc-logo-icon.png" />
+    <link href="../styles/styles.css" rel="stylesheet" />
+    <title>Personal Projects | Matthew Douglas</title>
+  </head>
+  <body class="project-page">
+    <nav class="nav nav--minimal" id="main-nav">
+      <a class="nav__brand" href="../index.html">
+        <img src="../images/logo/bsc-logo-icon.png" height="42" alt="Byte Size Coder" />
+      </a>
+    </nav>
+
+    <header class="project-hero ph-hero-echogrounds">
+      <div class="project-hero__overlay"></div>
+      <div class="project-hero__content">
+        <a href="../index.html#projects" class="project-hero__back">Back to Projects</a>
+        <div class="project-hero__tags">
+          <span class="project-tag tag--game">Game</span>
+          <span class="project-tag tag--web">Web</span>
+        </div>
+        <h1 class="project-hero__title">Personal Projects</h1>
+        <p class="project-hero__subtitle">
+          Independent builds where I explored gameplay mechanics, immersive interfaces, and real-time web products.
+        </p>
+      </div>
+    </header>
+
+    <main class="project-content">
+      <div class="project-main">
+        <section class="project-section">
+          <h2>Rocket Recover</h2>
+          <p>
+            Arcade-style mobile game shipped for Android and iOS under Cat Splat Studios.
+            This was an end-to-end release where I handled design, gameplay engineering, publishing, and live integrations.
+          </p>
+          <ul>
+            <li>Built progression and obstacle systems with mobile-first controls.</li>
+            <li>Integrated platform services including leaderboards and monetization support.</li>
+            <li>Managed ship-ready release process across both app stores.</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://youtu.be/6MBp4RPGWVM" target="_blank" rel="noopener noreferrer" class="btn-primary">View Gameplay</a>
+            <a href="https://github.com/Cat-Splat-Studios/Project_ShipJump" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub Repo</a>
+          </div>
+        </section>
+
+        <section class="project-section">
+          <h2>Western VR Shooter</h2>
+          <p>
+            VR prototype built for Oculus/Meta hardware, focused on arcade action, dual-wield interaction,
+            and score-driven challenge loops.
+          </p>
+          <ul>
+            <li>Implemented custom weapon interaction and reload behavior.</li>
+            <li>Built using OpenXR with Unity XR Interaction Toolkit.</li>
+            <li>Iterated rapidly on feel, challenge pacing, and VR ergonomics.</li>
+          </ul>
+        </section>
+
+        <section class="project-section">
+          <h2>Chatnonymous</h2>
+          <p>
+            Real-time anonymous chat application designed for frictionless conversation without persistent identity.
+          </p>
+          <ul>
+            <li>Built a React front-end with a Node.js WebSocket backend.</li>
+            <li>Designed transient session flow with privacy-first behavior.</li>
+            <li>Shipped as a lightweight, real-time social experience.</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://chatnonymous.fly.dev/" target="_blank" rel="noopener noreferrer" class="btn-primary">Try It Out</a>
+            <a href="https://github.com/Byte-Size-Coder/chatnonymous" target="_blank" rel="noopener noreferrer" class="btn-secondary">GitHub Repo</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container footer__inner">
+        <img src="../images/logo/bsc-logo-icon.png" height="36" alt="BSC" />
+        <p>&copy; 2025 bytesizecoder.ca &mdash; All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+  </body>
+</html>

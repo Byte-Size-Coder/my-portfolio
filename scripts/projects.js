@@ -206,6 +206,8 @@ function OpenProjectModal(project) {
     iframe.width = "300";
     iframe.height = "200";
     iframe.src = project.modalIFrameURL;
+    iframe.referrerPolicy = "origin";
+    iframe.loading = "lazy";
     iframe.allow =
       "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
 

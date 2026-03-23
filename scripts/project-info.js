@@ -2,7 +2,7 @@ const projectInfo = [
   {
     imgSrc: "images/lgts/lgts-screen.jpg",
     name: "Little Goody Two Shoes",
-    modalIFrameURL: "https://www.youtube.com/embed/7zJnQvDRzO0?si=ILmvR_KnQh1angem",
+    modalIFrameURL: "https://www.youtube.com/embed/7zJnQvDRzO0?rel=0&modestbranding=1&playsinline=1",
     skills: ["csharp", "unity", "xbox"],
     descriptionParagaphs: [
       `Little Goody Two Shoes is a narrative-driven RPG with adventure and horror elements, featuring stylized anime-inspired art direction and systems-focused gameplay.`,
@@ -127,22 +127,6 @@ const projectInfo = [
     ],
   },
   {
-    imgSrc: "images/websites/parkwaywebsite.jpg",
-    name: "Parkway Landscaping Website",
-    modalImgSrc: "images/websites/pg-logo.png",
-    skills: ["html5", "css3", "javascript"],
-    descriptionParagaphs: [
-      `This client project established a standalone digital presence for landscaping services, separate from the company’s main garden center website.`,
-      `I designed and developed a lightweight, responsive site focused on service clarity and lead capture, including a streamlined inquiry form and Google Analytics integration for performance tracking.`,
-    ],
-    actionButtons: [
-      {
-        text: "View Website",
-        url: "https://www.pglandscaping.ca/index.html",
-      },
-    ],
-  },
-  {
     imgSrc: "images/websites/catsplatwebsite.jpg",
     name: "Cat Splat Studios Website",
     modalImgSrc: "images/websites/catsplat-logo.png",
@@ -169,8 +153,64 @@ const projectInfo = [
     ],
     actionButtons: [],
   },
+  {
+    imgSrc: "",
+    name: "EchoGrounds",
+    skills: ["typescript", "react", "csharp", "azure", "terraform"],
+    descriptionParagaphs: [
+      `EchoGrounds is a cloud-native language preservation platform designed to empower the Delaware Nation to document, manage, and teach their traditional language. The system serves as both a secure digital archive and an accessible educational tool.`,
+      `The platform is architected with Data Sovereignty as its core principle. It creates a strict separation between the software logic (the "Engine") and the cultural content (the "Fuel"), ensuring that all intellectual property regarding language, audio, and stories remains under the exclusive ownership of the Nation.`,
+    ],
+    actionButtons: [
+      {
+        text: "View Website",
+        url: "https://catsplatstudios.com/",
+      },
+    ],
+  },
+  {
+    imgSrc: "",
+    name: "AIAI Match Game",
+    skills: ["csharp", "unity", "google-play", "ios"],
+    descriptionParagaphs: [
+      `AIAI Match is an interactive educational app built as a solo project for the Association of Iroquois and Allied Indians (AIAI), transforming the classic memory-match mechanic into a cultural learning experience for classrooms, families, and lifelong learners.`,
+      `I handled the full development cycle end-to-end, including gameplay systems, UI implementation, and release preparation for both Android and iOS. Because the app is interface-heavy, I used an MVC approach with a simple stack-based system to manage UI page structure and navigation.`,
+      `The long-term roadmap is to expand the app with additional learning topics powered by external content sources connected through Firebase.`,
+    ],
+    actionButtons: [
+      {
+        text: "Android Store",
+        url: "https://play.google.com/store/apps/details?id=com.bytesizecoder.aiaimatch&hl=en",
+      },
+      {
+        text: "iOS Store",
+        url: "https://apps.apple.com/ca/app/aiai-match/id6742747458",
+      },
+    ],
+  },
+
 ];
 
-const webAndMobileProjects = [projectInfo[1], projectInfo[9], projectInfo[4]];
-const videoGameProjects = [projectInfo[0], projectInfo[2], projectInfo[3], projectInfo[5]];
-const websiteProjects = [projectInfo[7], projectInfo[8]];
+const getProjectsByName = (names) =>
+  names
+    .map((name) => projectInfo.find((project) => project.name === name))
+    .filter(Boolean);
+
+const webAndMobileProjects = getProjectsByName([
+  "EchoGrounds",
+  "Circle Mobile",
+  "Geotab Add-In Application",
+  "Chatnonymous",
+]);
+
+const videoGameProjects = getProjectsByName([
+  "Little Goody Two Shoes",
+  "Path of Titans",
+  "AIAI Match Game",
+  "Rocket Recover",
+  "Western VR Shooter",
+]);
+
+const websiteProjects = getProjectsByName([
+  "Cat Splat Studios Website",
+]);

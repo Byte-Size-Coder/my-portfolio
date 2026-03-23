@@ -6,232 +6,408 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="/images/logo/bsc-logo-icon.png" />
-    <link rel="image_src" href="/images/logo/bsc-logo-icon.png"">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="icon" href="/images/logo/bsc-logo-icon.png" />
     <link href="styles/styles.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQPB2J04P1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag() { dataLayer.push(arguments); }
       gtag("js", new Date());
-
       gtag("config", "G-NQPB2J04P1");
     </script>
     <title>Matthew Douglas | Software Developer</title>
   </head>
   <body>
-    <nav class="nav">
-      <div onclick="toggleNav()" class="nav__icon">
-        <img src="images/logo/bsc-logo-icon.png" height="50px" />
-      </div>
 
-      <div class="nav__links closed-links">
-        <a class="nav__link" href="#about-me" onclick="toggleNav()">About Me</a>
-        <a class="nav__link" href="#developer" onclick="toggleNav()">Web & Mobile</a>
-        <a class="nav__link" href="#scrum-master" onclick="toggleNav()">Game Development</a>
-        <a class="nav__link" href="#educator" onclick="toggleNav()">Websites</a>
-        <a class="nav__link" href="#connect" onclick="toggleNav()">Connect</a>
-        <a class="nav__link" href="https://bytesizecoderblog.vercel.app/" target="_blank">Blog</a>
-      </div>
+    <!-- ====== NAVIGATION ====== -->
+    <nav class="nav nav--minimal" id="main-nav">
+      <a class="nav__brand" href="index.html">
+        <img src="images/logo/bsc-logo-icon.png" height="42" alt="Byte Size Coder" />
+      </a>
     </nav>
-    <section class="intro">
-      <img class="title-image" src="images/logo/bsc-logo.png" alt="Byte Size Coder" />
-      <img class="profile-image" src="images/profile-pic.png" alt="Profile Picture" />
-    </section>
-    <section class="about-me" id="about-me">
-      <div class="about-me__title">
-        <h1 class="section-title align-text" id="about-me-title">Hi, I’m Matthew Douglas</h1>
-      </div>
 
-      <div class="about-me__description">
-        <p>
-          I’m a software developer focused on building polished web, mobile, and game experiences.
-          I started my career in game development and expanded into full-stack product development,
-          where I now design and deliver user-focused applications from concept to release.
+    <!-- ====== HERO ====== -->
+    <section class="hero">
+      <div class="hero__content">
+        <span class="hero__eyebrow">Software Developer</span>
+        <h1 class="hero__name">Matthew <span class="hero__name--accent">Douglas</span></h1>
+        <p class="hero__tagline">
+          I build polished web, mobile, and game experiences &mdash; from concept to release.
         </p>
-        <p>
-          In addition to industry work, I teach part-time at Fanshawe College. I lead programming
-          courses, mentor emerging developers, and help students connect technical fundamentals to
-          real-world software delivery.
-        </p>
-        <p>
-          My background combines strong engineering fundamentals, practical product thinking, and a
-          creative approach to problem solving. I enjoy turning complex requirements into reliable,
-          maintainable software.
-        </p>
-        <p>
-          If you’re looking for a developer who can collaborate across disciplines and ship quality
-          work, I’d be happy to connect.
-        </p>
-        <div class="schools">
-          <div class="school">
-            <img
-              id="tfs-img"
-              src="images/schools/tfs.jpeg"
-              alt="Toronto Film School"
-              height="100"
-            />
-            <p>Video Game Design & Development</p>
-          </div>
-          <div class="school">
-            <img src="images/schools/fanshawe.png" alt="Fanshawe College" height="100" />
-            <p>Computer Programmer Analyst</p>
-          </div>
+        <div class="hero__tags">
+          <span class="tag">Full-Stack</span>
+          <span class="tag">Game Dev</span>
+          <span class="tag">React Native</span>
+          <span class="tag">Unity / Unreal</span>
+          <span class="tag">Cloud &amp; DevOps</span>
         </div>
-        <div class="about-me__actions">
-          <button
-            onclick="navigate('./MatthewDouglas_ResumeCV.pdf')"
-            class="button-main"
-            id="button-cv"
-          >
-            View Resume
-          </button>
+        <div class="hero__actions">
+          <a href="#projects" class="btn-primary">View My Work</a>
+          <a href="#contact" class="btn-secondary">Get In Touch</a>
+          <a href="./MatthewDouglas_ResumeCV.pdf" target="_blank" class="btn-ghost">Resume</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__profile-wrap">
+          <img src="images/profile-pic.png" alt="Matthew Douglas" class="hero__profile" />
         </div>
       </div>
     </section>
-    <section id="developer">
-      <div class="career-container">
-        <div class="career-container__piece">
-          <h1 class="career-container__title" id="developer-title">Web & Mobile Applications</h1>
-          <p class="career-container__content">
-            I design and build scalable web and mobile products tailored to business and user goals.
-            My stack includes modern JavaScript frameworks, React Native, Node.js, and .NET. From
-            API design to polished front-end experiences, I focus on performance, reliability, and
-            long-term maintainability.
-          </p>
-        </div>
-        <div class="career-container__piece">
-          <div class="slider" id="slider-web"></div>
-          <button class="button-main btn-view" hidden>View More Info</button>
-        </div>
-      </div>
-    </section>
-    <section id="scrum-master">
-      <div class="career-container">
-        <div class="career-container__piece">
-          <div class="slider" id="slider-games"></div>
-        </div>
-        <div class="career-container__piece">
-          <h1 class="career-container__title">Game Development</h1>
-          <p class="career-container__content">
-            I build gameplay systems and technical features using Unity, Unreal Engine, C#, and C++.
-            My experience includes mechanics implementation, UI systems, optimization, debugging, and
-            console porting. I contribute across the full lifecycle, from prototype to production.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="educator">
-      <div class="career-container">
-        <div class="career-container__piece">
-          <h1 class="career-container__title">Website Development</h1>
-          <p class="career-container__content">
-            I create responsive, conversion-focused websites for professionals, small businesses, and
-            brands. My work emphasizes clean design, accessibility, and fast load performance while
-            keeping content clear and action-oriented across desktop and mobile devices.
-          </p>
-        </div>
-        <div class="career-container__piece" id="educator-content">
-          <div class="slider" id="slider-website"></div>
-        </div>
-      </div>
-    </section>
-    <section style="display: flex; flex-direction: column; align-items: center; gap: 2rem">
-      <h1 class="section-title no-margin">Certifications</h1>
-      <div>
-        <img src="./images/certs/PSM-Logo.png" width="200" />
-      </div>
-    </section>
-    <section class="connect" id="connect">
-      <div class="connect__title">
-        <h1 class="section-title no-margin">Let's Connect</h1>
-        <h2>I’m available for freelance work, partnerships, and technical consulting.</h2>
-      </div>
 
-      <section class="contact">
-        <form class="form">
-          <div class="controls">
-            <div class="control">
-              <label htmlFor="email">Your Email</label>
-              <input type="email" id="email" required />
-              <span id="error-email" class="error-hidden"></span>
+    <!-- ====== ABOUT ====== -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Background</span>
+          <h2 class="section__title">About Me</h2>
+        </div>
+        <div class="about__grid">
+          <div class="about__text">
+            <p>
+              I got into development through games. A lot of my early motivation came from wanting
+              to build fun, memorable experiences for players, and that passion still shapes how I
+              approach software today.
+            </p>
+            <p>
+              Over time, that path grew into web and full-stack development, where I've worked with
+              startups in hands-on roles building products across the stack. I've created apps and
+              games for desktop, mobile, web, and VR, and I enjoy figuring out how to turn ideas
+              into polished, practical solutions people actually want to use.
+            </p>
+            <p>
+              I've worked both as part of larger teams and on solo projects, so I'm comfortable
+              collaborating closely with others or taking ownership and driving things forward on my
+              own. That range has helped me build strong technical instincts, communicate clearly,
+              and stay focused on delivering work that is reliable, thoughtful, and ready for real-world use.
+            </p>
+            <p>
+              I also teach part-time at Fanshawe College, which keeps me sharp and connected to the
+              fundamentals. Whether I'm building a product from scratch, improving an existing one,
+              or helping shape a new idea, I bring a mix of creativity, technical depth, and confidence
+              in getting good work shipped.
+            </p>
+          </div>
+          <div class="about__credentials">
+            <div class="school-card">
+              <img src="images/schools/tfs.jpeg" alt="Toronto Film School" />
+              <div>
+                <strong>Toronto Film School</strong>
+                <p>Video Game Design &amp; Development</p>
+              </div>
             </div>
-            <div class="control">
-              <label htmlFor="name">Your Name</label>
-              <input type="text" id="name" required />
-              <span id="error-name" class="error-hidden"></span>
+            <div class="school-card">
+              <img src="images/schools/fanshawe.png" alt="Fanshawe College" />
+              <div>
+                <strong>Fanshawe College</strong>
+                <p>Computer Programmer Analyst</p>
+              </div>
+            </div>
+            <div class="school-card">
+              <img src="images/certs/PSM-Logo.png" alt="PSM Certification" />
+              <div>
+                <strong>Professional Scrum Master I</strong>
+                <p>Scrum.org Certified</p>
+              </div>
             </div>
           </div>
-          <div class="control">
-            <label htmlFor="message">Your Message</label>
-            <textarea rows="5" id="message" required></textarea>
-            <span id="error-message" class="error-hidden"></span>
-          </div>
-          <div class="actions">
-            <span class="contact__success-hidden" id="message-success"
-              >Message successfully sent!</span
-            >
-            <button id="submit-button" class="button-main">Send Message</button>
-          </div>
-        </form>
-      </section>
-
-      <div class="socials">
-        <div onclick="navigate('https://www.linkedin.com/in/matthewwalterdouglas/')" class="social">
-          <img src="images/socials/linkedin-logo.png" alt="LinkedIn" />
-        </div>
-        <div onclick="navigate('https://github.com/Byte-Size-Coder')" class="social">
-          <img src="images/socials/github.png" alt="Github" />
         </div>
       </div>
     </section>
 
+    <!-- ====== WHAT I DO ====== -->
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Expertise</span>
+          <h2 class="section__title">What I Do</h2>
+        </div>
+        <div class="services__grid">
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <h3>Web &amp; Mobile</h3>
+            <p>Applications built with reliable tools and modern frameworks. From API design to polished, performant front-end experiences — web and mobile solutions crafted with scalability and performance in mind.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+            <h3>Cloud Development</h3>
+            <p>Cloud-ready architecture, deployment pipelines, and scalable back-end systems across Azure, AWS, and Firebase, with a strong focus on reliability, performance, and cost efficiency. Full control through Infrastructure as Code (IaC) using Terraform.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <h3>Game Development</h3>
+            <p>Gameplay systems, UI, optimization, and networking solutions built across popular engines using C# and C++. Full lifecycle from prototype to production release, taking designs from concept to polished, playable experiences.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-users-gear"></i>
+            </div>
+            <h3>Scrum Leadership</h3>
+            <p>Professional Scrum Master I certified. Experienced in leading agile ceremonies, unblocking teams, and improving sprint flow. Led teams in the Scrum Master role to drive predictable delivery and accurate estimations through velocity tracking and story pointing.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <h3>Teaching &amp; Mentorship</h3>
+            <p>Part-time instructor at colleges and online bootcamps. I create an engaging, comfortable environment where students learn to solve real problems with practical solutions. I believe the best way to learn is to code, so I keep lectures focused and hands-on from day one.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <h3>Website Development</h3>
+            <p>From small business pages to ambitious custom builds, I design and develop websites that are accessible, visually polished, and built to look great across every device.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FEATURED PROJECTS ====== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Portfolio</span>
+          <h2 class="section__title">Featured Projects</h2>
+          <p class="section__subtitle">A selection of my best work across platforms and industries.</p>
+        </div>
+        <div class="projects__grid">
+
+          <!-- EchoGrounds -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/echogrounds/EGICON.png" alt="EchoGrounds" />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-tag tag--web">Web</span>
+                <span class="project-tag tag--cloud">Cloud</span>
+                <span class="project-tag tag--pro">Professional</span>
+              </div>
+              <h3 class="project-card__title">EchoGrounds</h3>
+              <p class="project-card__desc">A cloud-native language preservation platform
+                empowering the Delaware Nation to document, manage, and teach their traditional
+                language.</p>
+              <div class="project-card__skills">
+                <img src="images/skill-logos/typescript.png" alt="TypeScript" title="TypeScript" />
+                <img src="images/skill-logos/react.png" alt="React" title="React" />
+                <img src="images/skill-logos/csharp.png" alt="C#" title="C#" />
+                <img src="images/skill-logos/azure.png" alt="Azure" title="Azure" />
+                <img src="images/skill-logos/terraform.png" alt="Terraform" title="Terraform" />
+              </div>
+              <a href="projects/echogrounds.html" target="_blank" rel="noopener noreferrer" class="btn-primary project-card__cta">View Project</a>
+            </div>
+          </article>
+
+          <!-- Path of Titans -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/pot/pot.jpg" alt="Path of Titans" />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-tag tag--game">Game</span>
+                <span class="project-tag tag--pro">Professional</span>
+              </div>
+              <h3 class="project-card__title">Path of Titans</h3>
+              <p class="project-card__desc">Live multiplayer dinosaur survival MMO. Contributed
+                combat system features, AoE mechanics, and performance optimizations via Joydrop.</p>
+              <div class="project-card__skills">
+                <img src="images/skill-logos/cplusplus.png" alt="C++" title="C++" />
+                <img src="images/skill-logos/ue4.png" alt="Unreal Engine 4" title="Unreal Engine 4" />
+              </div>
+              <a href="projects/path-of-titans.html" target="_blank" rel="noopener noreferrer" class="btn-primary project-card__cta">View Project</a>
+            </div>
+          </article>
+
+          <!-- AIAI Match -->
+          <article class="project-card">
+              <div class="project-card__image">
+              <img src="images/aiai/aiai-screen1.png" alt="AIAI Match" />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-tag tag--game">Game</span>
+                <span class="project-tag tag--mobile">Mobile</span>
+                <span class="project-tag tag--pro">Professional</span>
+              </div>
+              <h3 class="project-card__title">AIAI Match Game</h3>
+              <p class="project-card__desc">An interactive educational mobile app connecting players
+                with Indigenous cultural knowledge through an immersive memory match mechanic.</p>
+              <div class="project-card__skills">
+                <img src="images/skill-logos/csharp.png" alt="C#" title="C#" />
+                <img src="images/skill-logos/unity.png" alt="Unity" title="Unity" />
+                <img src="images/skill-logos/google-play.png" alt="Google Play" title="Google Play" />
+                <img src="images/skill-logos/ios.png" alt="iOS" title="iOS" />
+              </div>
+              <a href="projects/aiai-match.html" target="_blank" rel="noopener noreferrer" class="btn-primary project-card__cta">View Project</a>
+            </div>
+          </article>
+
+          <!-- Little Goody Two Shoes -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/lgts/lgts-screen.jpg" alt="Little Goody Two Shoes" />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-tag tag--game">Game</span>
+                <span class="project-tag tag--pro">Professional</span>
+              </div>
+              <h3 class="project-card__title">Little Goody Two Shoes</h3>
+              <p class="project-card__desc">Narrative RPG published by Square Enix Collective. Led
+                Xbox platform support, controller UI updates, and release-quality bug fixing.</p>
+              <div class="project-card__skills">
+                <img src="images/skill-logos/csharp.png" alt="C#" title="C#" />
+                <img src="images/skill-logos/unity.png" alt="Unity" title="Unity" />
+                <img src="images/skill-logos/xbox.png" alt="Xbox" title="Xbox" />
+              </div>
+              <a href="projects/little-goody-two-shoes.html" target="_blank" rel="noopener noreferrer" class="btn-primary project-card__cta">View Project</a>
+            </div>
+          </article>
+
+          <!-- GeoDocs -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/webappdocs/geotabAddinApp.png" alt="GeoDocs" />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-tag tag--web">Web</span>
+                <span class="project-tag tag--pro">Professional</span>
+              </div>
+              <h3 class="project-card__title">GeoDocs</h3>
+              <p class="project-card__desc">Custom Geotab fleet management add-in for document
+                tracking across drivers, vehicles, and trailers with role-specific workflows.</p>
+              <div class="project-card__skills">
+                <img src="images/skill-logos/react.png" alt="React" title="React" />
+                <img src="images/skill-logos/javascript.png" alt="JavaScript" title="JavaScript" />
+                <img src="images/skill-logos/material-ui.png" alt="Material UI" title="Material UI" />
+                <img src="images/skill-logos/firebase.png" alt="Firebase" title="Firebase" />
+              </div>
+              <a href="projects/geodocs.html" target="_blank" rel="noopener noreferrer" class="btn-primary project-card__cta">View Project</a>
+            </div>
+          </article>
+
+          <!-- Circle Mobile -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/circlemobile/circlemobilestops.webp" alt="Circle Mobile" />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-tag tag--mobile">Mobile</span>
+                <span class="project-tag tag--pro">Professional</span>
+              </div>
+              <h3 class="project-card__title">Circle Mobile</h3>
+              <p class="project-card__desc">Led the complete modernization of a logistics driver app
+                from Xamarin to React Native with Expo, rebuilt from the ground up for iOS and Android.</p>
+              <div class="project-card__skills">
+                <img src="images/skill-logos/react.png" alt="React Native" title="React Native" />
+                <img src="images/skill-logos/expo.png" alt="Expo" title="Expo" />
+                <img src="images/skill-logos/typescript.png" alt="TypeScript" title="TypeScript" />
+                <img src="images/skill-logos/csharp.png" alt="C#" title="C#" />
+              </div>
+              <a href="projects/circle-mobile.html" target="_blank" rel="noopener noreferrer" class="btn-primary project-card__cta">View Project</a>
+            </div>
+          </article>
+
+          <!-- Personal Projects Collection -->
+          <article class="project-card">
+            <div class="project-card__image">
+              <img src="images/westernVR/WesternVRShooterDemo.gif" alt="Western VR" />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="project-tag tag--game">Game</span>
+                <span class="project-tag tag--web">Web</span>
+              </div>
+              <h3 class="project-card__title">Personal Projects</h3>
+              <p class="project-card__desc">A focused collection of personal work including Rocket Recover, Western VR, and Chatnonymous.</p>
+              <div class="project-card__skills">
+                <img src="images/skill-logos/unity.png" alt="Unity" title="Unity" />
+                <img src="images/skill-logos/csharp.png" alt="C#" title="C#" />
+                <img src="images/skill-logos/react.png" alt="React" title="React" />
+                <img src="images/skill-logos/node-js.png" alt="Node.js" title="Node.js" />
+              </div>
+              <a href="projects/personal-projects.html" target="_blank" rel="noopener noreferrer" class="btn-primary project-card__cta">View Collection</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== CONTACT ====== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__eyebrow">Let's Talk</span>
+          <h2 class="section__title">Get In Touch</h2>
+          <p class="section__subtitle">Available for freelance work, partnerships, and technical consulting.</p>
+        </div>
+        <div class="contact__grid">
+          <form class="contact__form" id="contact-form">
+            <div class="form__row">
+              <div class="form__group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="you@example.com" required />
+                <span id="error-email" class="error-hidden"></span>
+              </div>
+              <div class="form__group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Jane Smith" required />
+                <span id="error-name" class="error-hidden"></span>
+              </div>
+            </div>
+            <div class="form__group">
+              <label for="message">Your Message</label>
+              <textarea rows="6" id="message" placeholder="Tell me about your project..." required></textarea>
+              <span id="error-message" class="error-hidden"></span>
+            </div>
+            <div class="form__actions">
+              <span class="contact__success-hidden" id="message-success">Message successfully sent!</span>
+              <button type="button" id="submit-button" class="btn-primary">Send Message</button>
+            </div>
+          </form>
+          <div class="contact__info">
+            <h3>Connect With Me</h3>
+            <p>Feel free to reach out through the form or find me on any of the platforms below.</p>
+            <div class="social-links">
+              <a href="#" onclick="navigate('https://www.linkedin.com/in/matthewwalterdouglas/'); return false;" class="social-link">
+                <img src="images/socials/linkedin-logo.png" alt="LinkedIn" />
+                <span>LinkedIn</span>
+              </a>
+              <a href="#" onclick="navigate('https://github.com/Byte-Size-Coder'); return false;" class="social-link">
+                <img src="images/socials/github.png" alt="GitHub" />
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
     <footer>
-      <p>&copy; 2025 bytesizecoder.ca</p>
-      <p>All Rights Reserved</p>
-    </footer>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("h4uAprv3pJZbF0LzP");
-      })();
-    </script>
-    <div id="myModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <div class="modal-header">
-          <img class="modal-header__image" />
-          <h2 class="modal-header__title">Modal Title</h2>
-          <div class="modal-header__skills"></div>
-        </div>
-        <div class="modal-feature"></div>
-        <div class="modal-description">
-          <p>
-            This is a modal description. Here you can add more details about the content or purpose
-            of the modal.
-          </p>
-        </div>
-        <div class="modal-actions">
-          <button class="button-main">Cancel</button>
-          <button class="button-main">Confirm</button>
-        </div>
+      <div class="container footer__inner">
+        <img src="images/logo/bsc-logo-icon.png" height="36" alt="BSC" />
+        <p>&copy; 2025 bytesizecoder.ca &mdash; All Rights Reserved</p>
       </div>
-    </div>
+    </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function () { emailjs.init("h4uAprv3pJZbF0LzP"); })();
+    </script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/project-info.js"></script>
-    <script src="scripts/projects.js"></script>
   </body>
 </html>
